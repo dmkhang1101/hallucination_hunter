@@ -90,14 +90,14 @@ def run(n_questions: int = config.DEFAULT_N_QUESTIONS, dry_run: bool = False) ->
     df_full = dataset.to_pandas()
 
     # Keep only the columns we care about
-    df_full = df_full[["question", "category", "best_answer"]].copy()
+    df_full = df_full[["question", "category", "correct_answers"]].copy()
     print(f"[generate] Full dataset: {len(df_full)} questions across "
           f"{df_full['category'].nunique()} categories")
 
     # Stratified sample
     df_sample = _stratified_sample(df_full, n=n_questions, seed=config.RANDOM_SEED)
     df_sample["question_id"] = df_sample["question"].apply(_stable_id)
-    df_sample = df_sample[["question_id", "question", "category", "best_answer"]]
+    df_sample = df_sample[["question_id", "question", "category", "correct_answers"]]
 
     print(f"[generate] Sampled {len(df_sample)} questions")
     print(f"           Category breakdown:\n{df_sample['category'].value_counts().to_string()}")
