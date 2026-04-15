@@ -86,4 +86,19 @@ def run(answers_df: pd.DataFrame | None = None) -> pd.DataFrame:
     df_claims.to_csv(config.CLAIMS_CSV, index=False)
     print(f"[extract] Saved claims → {config.CLAIMS_CSV}")
 
+    # JSON version: group claims by question for easier downstream consumption
+    import json
+    grouped: list[dict] = []
+    for qid, g in df_claims.groupby("question_id", sort=False):
+        grouped.append({
+            "question_id":    qid,
+            "question":       g["question"].iloc[0],
+            "category":       g["category"].iloc[0],
+            "primary_answer": g["primary_answer"].iloc[0],
+            "claims":         g["claim"].tolist(),
+        })
+    with open(config.CLAIMS_JSON, "w", encoding="utf-8") as f:
+        json.dump(grouped, f, indent=2, ensure_ascii=False)
+    print(f"[extract] Saved claims → {config.CLAIMS_JSON}")
+
     return df_claims
