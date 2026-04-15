@@ -73,6 +73,7 @@ def run(answers_df: pd.DataFrame | None = None, dry_run: bool = False) -> pd.Dat
                 "question_id":    row["question_id"],
                 "question":       row["question"],
                 "category":       row["category"],
+                "correct_answer": row["best_answer"],
                 "primary_answer": row["primary_answer"],
                 "claim_index":    idx,          # 0-based position within the answer
                 "claim":          claim,
@@ -97,6 +98,7 @@ def run(answers_df: pd.DataFrame | None = None, dry_run: bool = False) -> pd.Dat
             "question_id":    qid,
             "question":       g["question"].iloc[0],
             "category":       g["category"].iloc[0],
+            "correct_answer": g["correct_answer"].iloc[0],
             "primary_answer": g["primary_answer"].iloc[0],
             "claims":         g["claim"].tolist(),
         })
