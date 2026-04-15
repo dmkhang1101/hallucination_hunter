@@ -61,14 +61,16 @@ def main() -> None:
 
     # Step 3: extract atomic claims
     print()
-    claims_df = extract.run(answers_df=answers_df)
+    claims_df = extract.run(answers_df=answers_df, dry_run=args.dry_run)
 
     print()
+    q_path, a_path, c_path, j_path = config.get_paths(args.dry_run)
     print("=" * 60)
     print("  Pipeline complete!")
-    print(f"  Questions  → {config.QUESTIONS_CSV}")
-    print(f"  Answers    → {config.ANSWERS_CSV}")
-    print(f"  Claims     → {config.CLAIMS_CSV}")
+    print(f"  Questions  → {q_path}")
+    print(f"  Answers    → {a_path}")
+    print(f"  Claims     → {c_path}")
+    print(f"  Claims     → {j_path}")
     print("=" * 60)
 
 

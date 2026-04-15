@@ -18,6 +18,22 @@ ANSWERS_CSV     = DATA_DIR / "primary_answers.csv"
 CLAIMS_CSV      = DATA_DIR / "atomic_claims.csv"
 CLAIMS_JSON     = DATA_DIR / "atomic_claims.json"
 
+# Dry-run outputs go to a separate subfolder so they never overwrite real data
+DRYRUN_DIR      = DATA_DIR / "dryrun"
+DRYRUN_DIR.mkdir(exist_ok=True)
+
+DRYRUN_QUESTIONS_CSV = DRYRUN_DIR / "sampled_questions.csv"
+DRYRUN_ANSWERS_CSV   = DRYRUN_DIR / "primary_answers.csv"
+DRYRUN_CLAIMS_CSV    = DRYRUN_DIR / "atomic_claims.csv"
+DRYRUN_CLAIMS_JSON   = DRYRUN_DIR / "atomic_claims.json"
+
+
+def get_paths(dry_run: bool) -> tuple[object, object, object, object]:
+    """Return (questions, answers, claims_csv, claims_json) paths for the given mode."""
+    if dry_run:
+        return DRYRUN_QUESTIONS_CSV, DRYRUN_ANSWERS_CSV, DRYRUN_CLAIMS_CSV, DRYRUN_CLAIMS_JSON
+    return QUESTIONS_CSV, ANSWERS_CSV, CLAIMS_CSV, CLAIMS_JSON
+
 # ── OpenAI ───────────────────────────────────────────────────────────────────
 OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
 GPT_MODEL: str = "gpt-4o"
