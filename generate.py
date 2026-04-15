@@ -1,5 +1,5 @@
 """
-Step 1 & 2 — Load TruthfulQA, stratified-sample N questions, call GPT-4o.
+Load TruthfulQA, stratified-sample N questions, call GPT-4o.
 
 Output: data/sampled_questions.csv  (question metadata)
         data/primary_answers.csv    (question + GPT-4o answer)
@@ -15,7 +15,7 @@ from tqdm import tqdm
 import config
 
 
-# ── Helpers ──────────────────────────────────────────────────────────────────
+# Helpers
 
 def _stable_id(question: str) -> str:
     """Short deterministic ID from question text."""
@@ -78,7 +78,7 @@ def _call_gpt(client: OpenAI, question: str, retries: int = 3) -> str:
                 raise
 
 
-# ── Public entry point ───────────────────────────────────────────────────────
+# Public entry point
 
 def run(n_questions: int = config.DEFAULT_N_QUESTIONS, dry_run: bool = False) -> pd.DataFrame:
     """

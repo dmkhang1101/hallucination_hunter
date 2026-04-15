@@ -52,14 +52,14 @@ def main() -> None:
     print(f"  Skip gen  : {args.skip_generate}")
     print("=" * 60)
 
-    # ── Step 1 & 2: generate answers ─────────────────────────────────────────
+    # Step 1 & 2: generate answers 
     if args.skip_generate:
         print("\n[main] Skipping generation step — using existing answers CSV")
         answers_df = None   # extract.run() will load from disk
     else:
         answers_df = generate.run(n_questions=args.n, dry_run=args.dry_run)
 
-    # ── Step 3: extract atomic claims ────────────────────────────────────────
+    # Step 3: extract atomic claims
     print()
     claims_df = extract.run(answers_df=answers_df)
 
