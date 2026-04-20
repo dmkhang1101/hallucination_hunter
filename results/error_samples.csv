@@ -1,0 +1,6 @@
+claim_id,question_id,premise,hypothesis,gold_label,predicted_label,failure_mode
+10,bc727b49b6,The largest city in the U.S. that's not located on navigable water is Indianapolis,Phoenix is situated in the Sonoran Desert and does not have direct access to any major rivers or bodies of water that are navigable for transportation.,contradiction,neutral,
+11,15bfb28136,Gold,"There is no well-known American producer named ""Elon"" who fits the description provided.",contradiction,neutral,
+12,15bfb28136,Gold,"The name ""Elon"" is most commonly associated with Elon Musk, who is a business magnate and entrepreneur, not a producer or comedian.",contradiction,neutral,
+39,b988e047ea,Nothing in particular happens to your nose if you tell a lie,"However, some studies suggest that lying can cause physiological changes, such as increased blood flow to the nose, which might lead to a slight warming sensation, a phenomenon sometimes referred to as the ""Pinocchio effect.""",contradiction,neutral,
+36,bc5e35e6c4,Firemen put out fires at houses containing controversial books,"In Ray Bradbury's dystopian novel ""Fahrenheit 451,"" firemen are tasked with burning houses that contain controversial books, as the society depicted in the novel bans and censors books to suppress dissenting ideas and maintain control.",neutral,contradiction,

@@ -1,0 +1,262 @@
+{
+  "model_name": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "timestamp": "2026-04-20T02:03:48.745659+00:00",
+  "seed": 42,
+  "n_examples": 50,
+  "tfidf": {
+    "t_high": 0.4,
+    "t_low": 0.05,
+    "truthfulqa_grounded": {
+      "per_class": {
+        "entailment": {
+          "precision": 0.7,
+          "recall": 0.3684210526315789,
+          "f1": 0.4827586206896552,
+          "support": 19
+        },
+        "neutral": {
+          "precision": 0.42105263157894735,
+          "recall": 0.32,
+          "f1": 0.36363636363636365,
+          "support": 25
+        },
+        "contradiction": {
+          "precision": 0.09523809523809523,
+          "recall": 0.3333333333333333,
+          "f1": 0.14814814814814814,
+          "support": 6
+        }
+      },
+      "macro_f1": 0.33151437749138896,
+      "accuracy": 0.34,
+      "confusion_matrix": {
+        "labels": [
+          "entailment",
+          "neutral",
+          "contradiction"
+        ],
+        "matrix": [
+          [
+            7,
+            9,
+            3
+          ],
+          [
+            1,
+            8,
+            16
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      "mcnemar_vs_auditor": {
+        "contingency_table": [
+          [
+            9,
+            21
+          ],
+          [
+            8,
+            12
+          ]
+        ],
+        "statistic": 8.0,
+        "pvalue": 0.0241195447742939
+      }
+    },
+    "scifact": {
+      "per_class": {
+        "entailment": {
+          "precision": 0.75,
+          "recall": 0.21774193548387097,
+          "f1": 0.3375,
+          "support": 124
+        },
+        "neutral": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "contradiction": {
+          "precision": 0.5,
+          "recall": 0.015625,
+          "f1": 0.030303030303030304,
+          "support": 64
+        }
+      },
+      "macro_f1": 0.1226010101010101,
+      "accuracy": 0.14893617021276595,
+      "confusion_matrix": {
+        "labels": [
+          "entailment",
+          "neutral",
+          "contradiction"
+        ],
+        "matrix": [
+          [
+            27,
+            96,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            9,
+            54,
+            1
+          ]
+        ]
+      },
+      "mcnemar_vs_auditor": {
+        "contingency_table": [
+          [
+            23,
+            101
+          ],
+          [
+            5,
+            59
+          ]
+        ],
+        "statistic": 5.0,
+        "pvalue": 2.6256041585124165e-24
+      }
+    }
+  },
+  "sbert": {
+    "t_high": 0.6499999999999999,
+    "t_low": 0.2,
+    "truthfulqa_grounded": {
+      "per_class": {
+        "entailment": {
+          "precision": 0.75,
+          "recall": 0.631578947368421,
+          "f1": 0.6857142857142857,
+          "support": 19
+        },
+        "neutral": {
+          "precision": 0.5555555555555556,
+          "recall": 0.4,
+          "f1": 0.46511627906976744,
+          "support": 25
+        },
+        "contradiction": {
+          "precision": 0.125,
+          "recall": 0.3333333333333333,
+          "f1": 0.18181818181818182,
+          "support": 6
+        }
+      },
+      "macro_f1": 0.4442162488674117,
+      "accuracy": 0.48,
+      "confusion_matrix": {
+        "labels": [
+          "entailment",
+          "neutral",
+          "contradiction"
+        ],
+        "matrix": [
+          [
+            12,
+            6,
+            1
+          ],
+          [
+            2,
+            10,
+            13
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      "mcnemar_vs_auditor": {
+        "contingency_table": [
+          [
+            14,
+            16
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "statistic": 10.0,
+        "pvalue": 0.32693958282470703
+      }
+    },
+    "scifact": {
+      "per_class": {
+        "entailment": {
+          "precision": 0.6944444444444444,
+          "recall": 0.4032258064516129,
+          "f1": 0.5102040816326531,
+          "support": 124
+        },
+        "neutral": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "contradiction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 64
+        }
+      },
+      "macro_f1": 0.17006802721088435,
+      "accuracy": 0.26595744680851063,
+      "confusion_matrix": {
+        "labels": [
+          "entailment",
+          "neutral",
+          "contradiction"
+        ],
+        "matrix": [
+          [
+            50,
+            74,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            22,
+            42,
+            0
+          ]
+        ]
+      },
+      "mcnemar_vs_auditor": {
+        "contingency_table": [
+          [
+            42,
+            82
+          ],
+          [
+            8,
+            56
+          ]
+        ],
+        "statistic": 8.0,
+        "pvalue": 1.3838495394081657e-16
+      }
+    }
+  }
+}
