@@ -100,6 +100,16 @@ Full per-class metrics, confusion matrices, and subtype analysis are in `results
 
 ---
 
+## Notes on Member Contributions
+
+Member B (`src/member_b/`) contributed exploratory scripts and visualizations that were merged into `main` via PR #2. There is partial overlap with the audit pipeline:
+
+- **Lexical baseline** — `src/member_b/lexical_baseline.py` runs TF-IDF + Jaccard on all 402 claims but produces only a prediction distribution (no gold labels). **`audit/tasks/run_baselines.py` (Task E) supersedes this** with proper Macro-F1 evaluation, S-BERT comparison, and McNemar significance testing against the DeBERTa auditor. Use Task E results (`results/baselines.json`) as the canonical baseline.
+- **All-claims predictions** — `results/lexical_baseline_results.csv` (Member B, lexical scores) and `results/predictions/all_claims_predictions.csv` (Member A, DeBERTa NLI) are complementary and cover the same 402 claims with different models.
+- **Annotation data** — `results/annotation_sample_50.csv` (Member B) and `50_sample_annotation.csv` (root, Member A) refer to the same pilot set. The root-level file is the authoritative version with adjudicated `Gold_Label` and `Gold_Source` columns.
+
+---
+
 ## Outputs Reference
 
 | File | Description |
