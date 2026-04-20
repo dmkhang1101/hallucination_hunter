@@ -4,7 +4,7 @@ Task E — Baselines: TF-IDF cosine + S-BERT against DeBERTa auditor.
 TF-IDF thresholds tuned on dev split (carved from TruthfulQA train), applied frozen to test.
 Evaluated on SciFact test + TruthfulQA grounded test.
 McNemar's test: auditor vs each baseline on same items.
-Output: results/baselines.json
+Output: results/baselines/baselines.json
 """
 
 import json

@@ -4,7 +4,7 @@ Task C — SciFact evaluation (RQ1): NLI transfer to scientific claim verificati
 Premise = abstract, hypothesis = claim.
 Label map: SUPPORT → entailment, CONTRADICT → contradiction (NOT_ENOUGH_INFO dropped).
 SciFact data loaded directly from official S3 release (no HF loading script required).
-Output: results/scifact_eval.json, results/scifact_confusion.png
+Output: results/eval/scifact_eval.json, results/figures/scifact_confusion.png
 """
 
 import sys

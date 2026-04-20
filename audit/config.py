@@ -19,25 +19,50 @@ SAMPLED_Q = GEN_DATA / "sampled_questions.csv"
 TQA_TRAIN = GEN_DATA / "split" / "truthfulqa_train.csv"
 TQA_TEST = GEN_DATA / "split" / "truthfulqa_test.csv"
 
-# Outputs
+# Output root
 RESULTS = REPO / "results"
 RESULTS.mkdir(exist_ok=True)
-PREDICTIONS = RESULTS / "predictions"
-PREDICTIONS.mkdir(exist_ok=True)
 
-PILOT_GOLD_JSON = RESULTS / "pilot_gold.json"
-MODEL_CONFIG_JSON = RESULTS / "model_config.json"
-SANITY_CHECK_JSON = RESULTS / "sanity_check.json"
-SCIFACT_EVAL_JSON = RESULTS / "scifact_eval.json"
-SCIFACT_CONFUSION_PNG = RESULTS / "scifact_confusion.png"
-TQA_GROUNDED_JSON = RESULTS / "truthfulqa_grounded.json"
-TQA_UNGROUNDED_JSON = RESULTS / "truthfulqa_ungrounded.json"
-TQA_COMPARISON_JSON = RESULTS / "grounded_vs_ungrounded.json"
-BASELINES_JSON = RESULTS / "baselines.json"
-SUBTYPE_ANALYSIS_JSON = RESULTS / "subtype_analysis.json"
-SUBTYPE_RECALL_PNG = RESULTS / "subtype_recall.png"
-ERROR_SAMPLES_CSV = RESULTS / "error_samples.csv"
+# Subfolders
+GOLD_DIR = RESULTS / "gold"
+EVAL_DIR = RESULTS / "eval"
+BASELINES_DIR = RESULTS / "baselines"
+ERROR_DIR = RESULTS / "error_analysis"
+FIGURES_DIR = RESULTS / "figures"
+PREDICTIONS_DIR = RESULTS / "predictions"
 
-ALL_CLAIMS_PREDICTIONS_CSV = PREDICTIONS / "all_claims_predictions.csv"
+for _d in (GOLD_DIR, EVAL_DIR, BASELINES_DIR, ERROR_DIR, FIGURES_DIR, PREDICTIONS_DIR):
+    _d.mkdir(exist_ok=True)
+
+# gold/
+PILOT_GOLD_JSON = GOLD_DIR / "pilot_gold.json"
+
+# eval/
+MODEL_CONFIG_JSON = EVAL_DIR / "model_config.json"
+SANITY_CHECK_JSON = EVAL_DIR / "sanity_check.json"
+SCIFACT_EVAL_JSON = EVAL_DIR / "scifact_eval.json"
+TQA_GROUNDED_JSON = EVAL_DIR / "truthfulqa_grounded.json"
+TQA_UNGROUNDED_JSON = EVAL_DIR / "truthfulqa_ungrounded.json"
+TQA_COMPARISON_JSON = EVAL_DIR / "grounded_vs_ungrounded.json"
+SUBTYPE_ANALYSIS_JSON = EVAL_DIR / "subtype_analysis.json"
+
+# baselines/
+BASELINES_JSON = BASELINES_DIR / "baselines.json"
+
+# error_analysis/
+ERROR_SAMPLES_CSV = ERROR_DIR / "error_samples.csv"
+FP_ANALYSIS_JSON = ERROR_DIR / "fp_analysis.json"
+
+# figures/
+SCIFACT_CONFUSION_PNG = FIGURES_DIR / "scifact_confusion.png"
+SUBTYPE_RECALL_PNG = FIGURES_DIR / "subtype_recall.png"
+PILOT_CONFUSION_PNG = FIGURES_DIR / "pilot_confusion.png"
+PILOT_F1_ACCURACY_PNG = FIGURES_DIR / "pilot_f1_accuracy.png"
+
+# predictions/
+ALL_CLAIMS_PREDICTIONS_CSV = PREDICTIONS_DIR / "all_claims_predictions.csv"
 
 LABEL_CLASSES = ["entailment", "neutral", "contradiction"]
+
+# Keep PREDICTIONS as alias for backwards compatibility with main.py skip logic
+PREDICTIONS = PREDICTIONS_DIR

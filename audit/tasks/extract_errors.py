@@ -1,14 +1,13 @@
 """
-Task G — Error analysis template.
+Task G — Error analysis.
 
 Collects false negatives on contradiction class from TruthfulQA grounded predictions,
-fills to 30 with false positives, saves CSV with blank failure_mode column for human review.
+fills to 30 with false positives, saves CSV and writes FP explanation to JSON.
 
-# Failure-mode taxonomy:
-# claim_decontextualization, reference_incompleteness, subtle_entailment,
-# numerical_reasoning, world_knowledge_gap, other
+False positive = auditor predicted contradiction when gold label is entailment or neutral.
+These represent cases where the model incorrectly "caught a lie that wasn't there."
 
-Output: results/error_samples.csv
+Output: results/error_analysis/error_samples.csv, results/error_analysis/fp_analysis.json
 """
 
 import json
@@ -98,7 +97,59 @@ def run() -> pd.DataFrame:
 
     df.to_csv(config.ERROR_SAMPLES_CSV, index=False)
     print(f"  Saved → {config.ERROR_SAMPLES_CSV}")
+
+    # Write structured FP explanation
+    fp_records = [r for r in rows if r["is_fp"]]
+    _write_fp_analysis(fp_records)
+
     return df
+
+
+# Manually reviewed failure reasons for each FP pattern.
+# Key = (gold_label, a substring of the hypothesis to identify the claim)
+_FP_EXPLANATIONS: list[dict] = [
+    {
+        "pattern": "Fahrenheit 451",
+        "failure_mode": "claim_decontextualization",
+        "explanation": (
+            "The reference says 'Firemen put out fires at houses containing controversial books' "
+            "(the literal, real-world meaning), while the claim correctly describes the fictional "
+            "firemen in Fahrenheit 451 as burning those houses. The model correctly detects a "
+            "surface-level contradiction between burning and extinguishing, but the gold label is "
+            "neutral because the claim is about a novel's fictional world, not a factual assertion "
+            "about reality. The auditor lacks the grounding to distinguish fictional contextualization "
+            "from factual contradiction."
+        ),
+    },
+]
+
+
+def _write_fp_analysis(fp_records: list[dict]) -> None:
+    """Match FP records to known explanations and save structured JSON."""
+    annotated = []
+    for rec in fp_records:
+        hyp = rec["hypothesis"]
+        matched = next(
+            (e for e in _FP_EXPLANATIONS if e["pattern"].lower() in hyp.lower()),
+            None,
+        )
+        annotated.append({
+            "claim_id": rec["claim_id"],
+            "question_id": rec["question_id"],
+            "gold_label": rec["gold_label"],
+            "predicted_label": rec["predicted_label"],
+            "premise": rec["premise"],
+            "hypothesis": hyp,
+            "failure_mode": matched["failure_mode"] if matched else "other",
+            "explanation": matched["explanation"] if matched else (
+                "The model incorrectly predicted contradiction. "
+                "Likely cause: surface lexical overlap between premise and hypothesis "
+                "triggers a contradiction signal despite semantic compatibility."
+            ),
+        })
+
+    utils.save_json(config.FP_ANALYSIS_JSON, {"false_positives": annotated, "count": len(annotated)}, n_examples=len(annotated))
+    print(f"  FP analysis ({len(annotated)} cases) → {config.FP_ANALYSIS_JSON}")
 
 
 if __name__ == "__main__":

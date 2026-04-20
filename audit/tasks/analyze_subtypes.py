@@ -3,7 +3,7 @@ Task F — Subtype analysis (RQ3): recall per hallucination subtype.
 
 Uses TruthfulQA grounded predictions (from Task D) and pilot gold subtypes.
 Flags subtypes with n < 3 as insufficient.
-Output: results/subtype_analysis.json, results/subtype_recall.png
+Output: results/eval/subtype_analysis.json, results/figures/subtype_recall.png
 """
 
 import json

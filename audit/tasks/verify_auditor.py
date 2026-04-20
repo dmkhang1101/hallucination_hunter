@@ -1,10 +1,10 @@
 """
 Task B — Pipeline sanity check for DeBERTa-v3 MNLI model.
 
-1. Save id2label → results/model_config.json
+1. Save id2label → results/eval/model_config.json
 2. Assert 10 hand-written pairs classify correctly
 3. Assert MNLI-mismatched 500-sample accuracy ∈ [0.85, 0.93]
-Output: results/sanity_check.json
+Output: results/eval/sanity_check.json
 """
 
 import sys

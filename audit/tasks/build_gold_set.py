@@ -4,7 +4,7 @@ Task A — Build pilot gold set from 50_sample_annotation.csv.
 Reads Gold_Label and Gold_Source columns directly (pre-adjudicated by Member A).
 No heuristic flipping or default-to-B logic applied.
 Subtype from Hallucination_Subtype column, carried only for contradictions.
-Output: results/pilot_gold.json
+Output: results/gold/pilot_gold.json
 """
 
 import sys
