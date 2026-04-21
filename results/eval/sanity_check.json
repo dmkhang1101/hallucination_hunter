@@ -1,0 +1,126 @@
+{
+  "model_name": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "timestamp": "2026-04-19T16:57:05.620446+00:00",
+  "seed": 42,
+  "n_examples": 500,
+  "hand_written_pairs": [
+    {
+      "premise": "All cats are mammals.",
+      "hypothesis": "Cats are animals.",
+      "expected": "entailment",
+      "predicted": "entailment",
+      "correct": true
+    },
+    {
+      "premise": "The sky is blue on a clear day.",
+      "hypothesis": "The sky has color on clear days.",
+      "expected": "entailment",
+      "predicted": "entailment",
+      "correct": true
+    },
+    {
+      "premise": "Water boils at 100°C at sea level.",
+      "hypothesis": "Water can become a gas at 100°C.",
+      "expected": "entailment",
+      "predicted": "entailment",
+      "correct": true
+    },
+    {
+      "premise": "Paris is the capital of France.",
+      "hypothesis": "France has a capital city.",
+      "expected": "entailment",
+      "predicted": "entailment",
+      "correct": true
+    },
+    {
+      "premise": "The movie won three awards.",
+      "hypothesis": "The director was nervous at the ceremony.",
+      "expected": "neutral",
+      "predicted": "neutral",
+      "correct": true
+    },
+    {
+      "premise": "She runs every morning.",
+      "hypothesis": "Her shoes are expensive.",
+      "expected": "neutral",
+      "predicted": "neutral",
+      "correct": true
+    },
+    {
+      "premise": "The restaurant opened last year.",
+      "hypothesis": "The chef trained in Italy.",
+      "expected": "neutral",
+      "predicted": "neutral",
+      "correct": true
+    },
+    {
+      "premise": "The Earth orbits the Sun.",
+      "hypothesis": "The Sun orbits the Earth.",
+      "expected": "contradiction",
+      "predicted": "contradiction",
+      "correct": true
+    },
+    {
+      "premise": "He passed the exam.",
+      "hypothesis": "He failed the exam.",
+      "expected": "contradiction",
+      "predicted": "contradiction",
+      "correct": true
+    },
+    {
+      "premise": "The store is open on Sundays.",
+      "hypothesis": "The store is closed every Sunday.",
+      "expected": "contradiction",
+      "predicted": "contradiction",
+      "correct": true
+    }
+  ],
+  "hand_written_correct": 10,
+  "mnli_mismatched_accuracy": 0.896,
+  "per_class": {
+    "entailment": {
+      "precision": 0.925,
+      "recall": 0.9024390243902439,
+      "f1": 0.9135802469135802,
+      "support": 164
+    },
+    "neutral": {
+      "precision": 0.8518518518518519,
+      "recall": 0.8414634146341463,
+      "f1": 0.8466257668711656,
+      "support": 164
+    },
+    "contradiction": {
+      "precision": 0.9101123595505618,
+      "recall": 0.9418604651162791,
+      "f1": 0.9257142857142857,
+      "support": 172
+    }
+  },
+  "macro_f1": 0.8953067664996772,
+  "accuracy": 0.896,
+  "confusion_matrix": {
+    "labels": [
+      "entailment",
+      "neutral",
+      "contradiction"
+    ],
+    "matrix": [
+      [
+        148,
+        14,
+        2
+      ],
+      [
+        12,
+        138,
+        14
+      ],
+      [
+        0,
+        10,
+        162
+      ]
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model_name": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "timestamp": "2026-04-20T02:34:59.693029+00:00",
+  "seed": 42,
+  "n_examples": 6,
+  "subtypes": {
+    "Factual Error": {
+      "n": 5,
+      "correct": 2,
+      "recall": 0.4,
+      "insufficient": false
+    },
+    "Imitative Falsehood": {
+      "n": 1,
+      "correct": 0,
+      "recall": 0.0,
+      "insufficient": true
+    }
+  }
+}

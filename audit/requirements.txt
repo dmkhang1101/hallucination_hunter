@@ -1,0 +1,8 @@
+transformers>=4.40
+datasets>=2.18
+torch
+pandas
+scikit-learn
+statsmodels
+sentence-transformers
+matplotlib
