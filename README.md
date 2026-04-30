@@ -119,7 +119,9 @@ Tasks run in order A → I. Tasks B, C, E, H, I are skipped automatically if the
 |------|---------|----------|----------|----------------------|
 | C — SciFact transfer, zero-shot (RQ1) | SciFact dev (323 pairs, 3-class) | 0.753 | 0.765 | 0.648 |
 | I — SciFact fine-tuned                | SciFact dev (323 pairs, 3-class) | **0.870** | **0.876** | **0.859** |
-| D — TruthfulQA grounded (RQ2)         | Pilot gold (50 claims)           | 0.499 | 0.600 | — |
+| D — TruthfulQA grounded (RQ2)         | Pilot gold (50 claims)           | 0.499 | 0.600 | 0.333 † |
+
+> **† Caution — small-sample metric.** Task D's pilot gold set has only **6 contradiction claims**, so the contradiction-recall figure (2/6 = 0.333) is highly noisy and not statistically meaningful on its own. The eval JSON already flags this with `"power_warning": true`. Treat Task D's per-class numbers as directional, not as a reliable point estimate — the pilot set was sized for overall feasibility, not per-class power. SciFact (Tasks C/I) has 71 contradiction examples in dev and is the appropriate benchmark for contradiction recall.
 
 **Baseline comparison (pilot set, 50 claims):**
 
