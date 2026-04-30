@@ -27,10 +27,15 @@ _NLI_MAP = {"entailment": "entailment", "neutral": "neutral", "contradiction": "
 
 
 def _predict_batch(pipe: any, premises: list[str], hypotheses: list[str], batch_size: int = 16) -> list[str]:
-    inputs = [f"{p} [SEP] {h}" for p, h in zip(premises, hypotheses)]
+    # Use dict-style {"text", "text_pair"} so the pipeline tokenizes the
+    # premise/hypothesis as a proper NLI sequence pair (`[CLS] p [SEP] h [SEP]`
+    # with token_type_ids). Earlier versions concatenated `f"{p} [SEP] {h}"`
+    # into a single string — the literal "[SEP]" is NOT recognized as the
+    # special token by SentencePiece tokenizers, producing malformed inputs.
+    paired_inputs = [{"text": p, "text_pair": h} for p, h in zip(premises, hypotheses)]
     results = []
-    for i in range(0, len(inputs), batch_size):
-        batch = inputs[i : i + batch_size]
+    for i in range(0, len(paired_inputs), batch_size):
+        batch = paired_inputs[i : i + batch_size]
         out = pipe(batch, truncation=True, max_length=512)
         for item in out:
             results.append(_NLI_MAP.get(item["label"].lower(), item["label"].lower()))

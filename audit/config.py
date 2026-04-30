@@ -41,6 +41,8 @@ PILOT_GOLD_JSON = GOLD_DIR / "pilot_gold.json"
 MODEL_CONFIG_JSON = EVAL_DIR / "model_config.json"
 SANITY_CHECK_JSON = EVAL_DIR / "sanity_check.json"
 SCIFACT_EVAL_JSON = EVAL_DIR / "scifact_eval.json"
+SCIFACT_FINETUNED_EVAL_JSON = EVAL_DIR / "scifact_finetuned_eval.json"
+SCIFACT_COMPARISON_JSON = EVAL_DIR / "scifact_comparison.json"
 TQA_GROUNDED_JSON = EVAL_DIR / "truthfulqa_grounded.json"
 TQA_UNGROUNDED_JSON = EVAL_DIR / "truthfulqa_ungrounded.json"
 TQA_COMPARISON_JSON = EVAL_DIR / "grounded_vs_ungrounded.json"
@@ -53,8 +55,12 @@ BASELINES_JSON = BASELINES_DIR / "baselines.json"
 ERROR_SAMPLES_CSV = ERROR_DIR / "error_samples.csv"
 FP_ANALYSIS_JSON = ERROR_DIR / "fp_analysis.json"
 
+FINETUNED_MODEL_DIR = RESULTS / "finetuned_model"
+FINETUNED_MODEL_DIR.mkdir(exist_ok=True)
+
 # figures/
 SCIFACT_CONFUSION_PNG = FIGURES_DIR / "scifact_confusion.png"
+SCIFACT_FINETUNED_CONFUSION_PNG = FIGURES_DIR / "scifact_finetuned_confusion.png"
 SUBTYPE_RECALL_PNG = FIGURES_DIR / "subtype_recall.png"
 PILOT_CONFUSION_PNG = FIGURES_DIR / "pilot_confusion.png"
 PILOT_F1_ACCURACY_PNG = FIGURES_DIR / "pilot_f1_accuracy.png"
