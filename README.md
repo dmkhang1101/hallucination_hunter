@@ -149,6 +149,18 @@ DeBERTa-v3-large + SciFact reliably collapsed under default training settings. T
 
 ---
 
+## Known Limitations
+
+**Claim standalone-ness.** Roughly 32% of extracted claims (≈130/402) are not fully self-contained:
+
+- **Pronoun/demonstrative starts (63 claims):** Sentences like *"He is a Polish politician…"* or *"This duality is a fundamental aspect of quantum mechanics"* refer to an entity introduced in the preceding sentence. Without that context, the claim is under-specified.
+- **Question-anchored claims (13 claims):** Phrases like *"The city you are referring to is Los Angeles"* are meaningless without the original question.
+- **AI first-person claims (14 claims):** *"I am an artificial intelligence…"* is a meta-statement about the model, not a world-knowledge claim; it cannot be entailed or contradicted by a TruthfulQA reference answer.
+
+The NLI pipeline (`predict_all_claims.py` / Task H) feeds only `claim` as the hypothesis against the first correct answer as the premise — no question text, no surrounding answer context — so these under-specified claims are evaluated at a disadvantage and likely inflate the neutral/false-negative rate. A future fix would prepend the question to the hypothesis or resolve coreferences before scoring.
+
+---
+
 ## Notes on Member Contributions
 
 Member B (`src/member_b/`) contributed exploratory scripts and visualizations merged via PR #2. Overlaps with the audit pipeline:
