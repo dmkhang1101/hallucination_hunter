@@ -1,37 +1,51 @@
 {
   "model_name": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
-  "timestamp": "2026-04-20T01:51:54.352806+00:00",
+  "timestamp": "2026-04-30T06:38:55.040276+00:00",
   "seed": 42,
-  "n_examples": 188,
+  "n_examples": 323,
   "per_class": {
     "contradiction": {
-      "precision": 0.7906976744186046,
-      "recall": 0.53125,
-      "f1": 0.6355140186915887,
-      "support": 64
+      "precision": 0.7419354838709677,
+      "recall": 0.647887323943662,
+      "f1": 0.6917293233082707,
+      "support": 71
     },
     "entailment": {
-      "precision": 0.8333333333333334,
-      "recall": 0.7258064516129032,
-      "f1": 0.7758620689655172,
-      "support": 124
+      "precision": 0.8360655737704918,
+      "recall": 0.7391304347826086,
+      "f1": 0.7846153846153846,
+      "support": 138
+    },
+    "neutral": {
+      "precision": 0.7122302158273381,
+      "recall": 0.868421052631579,
+      "f1": 0.7826086956521738,
+      "support": 114
     }
   },
-  "macro_f1": 0.705688043828553,
-  "accuracy": 0.6595744680851063,
+  "macro_f1": 0.7529844678586097,
+  "accuracy": 0.7647058823529411,
   "confusion_matrix": {
     "labels": [
       "contradiction",
-      "entailment"
+      "entailment",
+      "neutral"
     ],
     "matrix": [
       [
-        34,
-        18
+        46,
+        11,
+        14
       ],
       [
+        10,
+        102,
+        26
+      ],
+      [
+        6,
         9,
-        90
+        99
       ]
     ]
   }

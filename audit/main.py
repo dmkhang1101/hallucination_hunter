@@ -32,6 +32,7 @@ TASKS: list[tuple[str, str, str, Path | None]] = [
     ("F", "Subtype Analysis (RQ3)", "tasks.analyze_subtypes",     None),
     ("G", "Error Analysis",         "tasks.extract_errors",       None),
     ("H", "Predict All Claims",     "tasks.predict_all_claims",   config.ALL_CLAIMS_PREDICTIONS_CSV),
+    ("I", "SciFact Fine-tune",      "tasks.finetune_scifact",     config.SCIFACT_FINETUNED_EVAL_JSON),
 ]
 
 
