@@ -28,8 +28,10 @@ DRYRUN_CLAIMS_CSV    = DRYRUN_DIR / "atomic_claims.csv"
 DRYRUN_CLAIMS_JSON   = DRYRUN_DIR / "atomic_claims.json"
 
 # TruthfulQA train/test split outputs
-TRAIN_CSV = DATA_DIR / "truthfulqa_train.csv"
-TEST_CSV  = DATA_DIR / "truthfulqa_test.csv"
+SPLIT_DIR = DATA_DIR / "split"
+SPLIT_DIR.mkdir(exist_ok=True)
+TRAIN_CSV = SPLIT_DIR / "truthfulqa_train.csv"
+TEST_CSV  = SPLIT_DIR / "truthfulqa_test.csv"
 
 
 def get_paths(dry_run: bool) -> tuple[object, object, object, object]:
