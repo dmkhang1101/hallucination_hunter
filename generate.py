@@ -102,9 +102,11 @@ def run(n_questions: int = config.DEFAULT_N_QUESTIONS, dry_run: bool = False) ->
     print(f"[generate] Sampled {len(df_sample)} questions")
     print(f"           Category breakdown:\n{df_sample['category'].value_counts().to_string()}")
 
+    questions_path, answers_path, _, _ = config.get_paths(dry_run)
+
     # Save sampled questions
-    df_sample.to_csv(config.QUESTIONS_CSV, index=False)
-    print(f"[generate] Saved questions → {config.QUESTIONS_CSV}")
+    df_sample.to_csv(questions_path, index=False)
+    print(f"[generate] Saved questions → {questions_path}")
 
     # Generate GPT-4o answers
     if dry_run:
@@ -131,7 +133,7 @@ def run(n_questions: int = config.DEFAULT_N_QUESTIONS, dry_run: bool = False) ->
     df_answers["primary_answer"] = answers
 
     # Save answers
-    df_answers.to_csv(config.ANSWERS_CSV, index=False)
-    print(f"[generate] Saved answers → {config.ANSWERS_CSV}")
+    df_answers.to_csv(answers_path, index=False)
+    print(f"[generate] Saved answers → {answers_path}")
 
     return df_answers
