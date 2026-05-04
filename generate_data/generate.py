@@ -78,6 +78,24 @@ def _call_gpt(client: OpenAI, question: str, retries: int = 3) -> str:
                 raise
 
 
+def _save_train_test_split(df_full: pd.DataFrame, seed: int) -> pd.DataFrame:
+    """Randomly split df_full into train/test (70/30), save as CSV, and return df_train."""
+    df_train = df_full.sample(frac=0.7, random_state=seed).reset_index(drop=True)
+    df_test  = df_full.drop(df_train.index).reset_index(drop=True)
+
+    df_train.to_csv(config.TRAIN_CSV, index=False)
+    df_test.to_csv(config.TEST_CSV,   index=False)
+
+    total = len(df_full)
+    print(
+        f"[generate] Saved train/test split → "
+        f"{config.TRAIN_CSV.name} ({len(df_train)}) / "
+        f"{config.TEST_CSV.name} ({len(df_test)})  "
+        f"[{len(df_train) / total * 100:.0f}/{len(df_test) / total * 100:.0f}]"
+    )
+    return df_train
+
+
 # Public entry point
 
 def run(n_questions: int = config.DEFAULT_N_QUESTIONS, dry_run: bool = False) -> pd.DataFrame:
@@ -94,12 +112,15 @@ def run(n_questions: int = config.DEFAULT_N_QUESTIONS, dry_run: bool = False) ->
     print(f"[generate] Full dataset: {len(df_full)} questions across "
           f"{df_full['category'].nunique()} categories")
 
-    # Stratified sample
-    df_sample = _stratified_sample(df_full, n=n_questions, seed=config.RANDOM_SEED)
+    # Split first so sampling is restricted to train questions only
+    df_train = _save_train_test_split(df_full, seed=config.RANDOM_SEED)
+
+    # Stratified sample from train split only
+    df_sample = _stratified_sample(df_train, n=n_questions, seed=config.RANDOM_SEED)
     df_sample["question_id"] = df_sample["question"].apply(_stable_id)
     df_sample = df_sample[["question_id", "question", "category", "correct_answers"]]
 
-    print(f"[generate] Sampled {len(df_sample)} questions")
+    print(f"[generate] Sampled {len(df_sample)} questions from train split")
     print(f"           Category breakdown:\n{df_sample['category'].value_counts().to_string()}")
 
     questions_path, answers_path, _, _ = config.get_paths(dry_run)

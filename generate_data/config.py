@@ -27,6 +27,10 @@ DRYRUN_ANSWERS_CSV   = DRYRUN_DIR / "primary_answers.csv"
 DRYRUN_CLAIMS_CSV    = DRYRUN_DIR / "atomic_claims.csv"
 DRYRUN_CLAIMS_JSON   = DRYRUN_DIR / "atomic_claims.json"
 
+# TruthfulQA train/test split outputs
+TRAIN_CSV = DATA_DIR / "truthfulqa_train.csv"
+TEST_CSV  = DATA_DIR / "truthfulqa_test.csv"
+
 
 def get_paths(dry_run: bool) -> tuple[object, object, object, object]:
     """Return (questions, answers, claims_csv, claims_json) paths for the given mode."""
