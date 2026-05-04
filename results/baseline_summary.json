@@ -1,0 +1,18 @@
+{
+  "total_claims": 402,
+  "predictions": {
+    "Contradiction": 282,
+    "Neutral": 69,
+    "Entailment": 51
+  },
+  "mean_scores": {
+    "token_overlap": 0.1487831865976204,
+    "tfidf_similarity": 0.11668755032248937,
+    "combined_score": 0.13273536846005488
+  },
+  "std_scores": {
+    "token_overlap": 0.19660473709810497,
+    "tfidf_similarity": 0.18654952930664292,
+    "combined_score": 0.18685027749401512
+  }
+}
