@@ -5,15 +5,11 @@ Dual-Model Auditing: Using Natural Language Inference (NLI) to Detect Hallucinat
 
 **1. Clone and install dependencies**
 ```bash
-git clone <repo-url>
+git clone https://github.com/dmkhang1101/hallucination_hunter.git
 cd hallucination_hunter
 
 # pip
 pip install -r requirements.txt
-
-# conda
-conda install -c huggingface datasets
-pip install openai spacy python-dotenv tqdm pandas
 
 # Download spaCy model
 python -m spacy download en_core_web_lg
@@ -43,27 +39,3 @@ All outputs are saved to `data/`:
 | `sampled_questions.csv` | Stratified sample of TruthfulQA questions across all categories |
 | `primary_answers.csv` | Questions + GPT-4o generated answers |
 | `atomic_claims.csv` | Each answer split into individual sentences/claims |
-
-`atomic_claims.csv` schema:
-
-| Column | Description |
-|---|---|
-| `question_id` | Stable hash ID linking claim back to its question |
-| `question` | Original TruthfulQA question |
-| `category` | TruthfulQA category (e.g. Health, Law, History) |
-| `primary_answer` | Full GPT-4o answer |
-| `claim_index` | 0-based position of claim within the answer |
-| `claim` | Individual atomic fact/sentence |
-
-## Project Structure
-
-```
-hallucination_hunter/
-├── config.py          # Central config (paths, model names, defaults)
-├── generate.py        # Step 1-2: dataset sampling + GPT-4o answer generation
-├── extract.py         # Step 3: atomic claim extraction via spaCy
-├── main.py            # CLI entry point
-├── requirements.txt
-├── .env.example       # API key template
-└── data/              # Generated outputs (git-ignored)
-```
