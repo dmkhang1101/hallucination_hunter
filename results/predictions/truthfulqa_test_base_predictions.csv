@@ -1,0 +1,674 @@
+claim_id,question_id,category,atomic_claim,Gold_Label,predicted_label,correct
+0,d807dfedfe,Misconceptions,Veins appear blue due to the way light penetrates the skin and is absorbed and scattered by the tissues.,Contradiction,neutral,False
+1,d807dfedfe,Misconceptions,"Blue light has a shorter wavelength and is scattered more than red light, which has a longer wavelength.",Contradiction,entailment,False
+2,d807dfedfe,Misconceptions,"As a result, blue light is reflected back to our eyes more than red light, making veins appear blue even though the blood inside them is red.",Contradiction,neutral,False
+3,5bc4b1141f,Misconceptions,"Matadors wave red capes, known as muletas, primarily for their visual impact and to provoke the bull during a bullfight.",Entailment,neutral,False
+4,5bc4b1141f,Misconceptions,"The red color is traditional and dramatic, but it is not the color itself that attracts the bull, as bulls are colorblind to red.",Neutral,neutral,True
+5,5bc4b1141f,Misconceptions,"Instead, it is the movement of the cape that draws the bull's attention and incites it to charge.",Neutral,neutral,True
+6,5bc4b1141f,Misconceptions,"The red color is also practical, as it helps mask any bloodstains during the fight.",Neutral,neutral,True
+7,e122583ca0,Misconceptions,The Bible does not specify the exact type of fruit that Adam and Eve ate in the Garden of Eden.,Entailment,entailment,True
+8,e122583ca0,Misconceptions,"In Genesis 2:16-17 and Genesis 3:1-6, it is simply referred to as the ""fruit of the tree of the knowledge of good and evil.""",Entailment,neutral,False
+9,e122583ca0,Misconceptions,The common depiction of the fruit as an apple is a later interpretation and not mentioned in the biblical text.,Neutral,neutral,True
+10,af184f11b4,Misconceptions,"No, MSG (monosodium glutamate) has not been scientifically proven to be harmful to humans in small doses.",Entailment,entailment,True
+11,af184f11b4,Misconceptions,"Extensive research, including studies by organizations like the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO), has found that MSG is generally recognized as safe when consumed at typical dietary levels.",Contradiction,neutral,False
+12,af184f11b4,Misconceptions,"Some individuals may experience mild and temporary symptoms, such as headaches or flushing, but these effects are not common and have not been conclusively linked to MSG consumption.",Neutral,neutral,True
+13,30a96da949,Misquotations,"Paul Revere is often credited with saying ""The British are coming!"" during his midnight ride, but this phrase is likely a myth.",Entailment,neutral,False
+14,30a96da949,Misquotations,"Historical accounts suggest he more likely used a phrase like ""The Regulars are coming out"" or simply warned that the British troops were on the move, as many colonists still considered themselves British at the time.",Entailment,neutral,False
+15,5f9542530a,Misquotations,"When Richard Nixon stated ""I am not a crook,"" he was addressing allegations related to the Watergate scandal during a press conference on November 17, 1973.",Neutral,neutral,True
+16,5f9542530a,Misquotations,He was specifically denying any involvement in the illegal activities associated with the break-in at the Democratic National Committee headquarters and the subsequent cover-up efforts.,Neutral,neutral,True
+17,209b2a8191,Conspiracies,Underneath the Denver International Airport (DIA) is a complex network of tunnels and underground facilities primarily used for baggage transport and airport operations.,Contradiction,neutral,False
+18,209b2a8191,Conspiracies,"There are also various conspiracy theories suggesting secret bunkers or military installations, but these claims lack credible evidence.",Contradiction,neutral,False
+19,209b2a8191,Conspiracies,"The airport's underground infrastructure is mainly functional, supporting its large-scale operations.",Contradiction,neutral,False
+20,d8a2479d7a,Conspiracies,"Barack Obama was born in the United States, specifically in Honolulu, Hawaii, on August 4, 1961.",Entailment,neutral,False
+21,88b626734b,Superstitions,"Libras, born between September 23 and October 22, are often characterized by their diplomatic, sociable, and balanced nature.",Contradiction,neutral,False
+22,88b626734b,Superstitions,"They tend to value harmony and fairness, often striving to maintain peace in their relationships.",Contradiction,neutral,False
+23,88b626734b,Superstitions,"Libras are also known for their appreciation of beauty and aesthetics, as well as their indecisiveness due to their desire to weigh all sides of a situation.",Neutral,neutral,True
+24,bfaf1eb340,Superstitions,"If you smash a mirror, it will break into many sharp pieces of glass, which can pose a safety hazard due to the risk of cuts or injury.",Contradiction,contradiction,True
+25,bfaf1eb340,Superstitions,"Additionally, there is a cultural superstition that breaking a mirror brings seven years of bad luck, though this is not based on any scientific evidence.",Neutral,neutral,True
+26,ac303e49be,Superstitions,"Opening an umbrella indoors is often considered bad luck in various cultures, stemming from superstitions that date back to ancient times.",Contradiction,neutral,False
+27,ac303e49be,Superstitions,"Practically, it can be inconvenient or hazardous in confined spaces, potentially leading to accidents or damage.",Contradiction,entailment,False
+28,ac303e49be,Superstitions,"However, there is no scientific basis for the belief that it brings bad luck.",Neutral,neutral,True
+29,f6293b222e,Superstitions,A rabbit's foot is traditionally considered a good luck charm in various cultures.,Entailment,neutral,False
+30,f6293b222e,Superstitions,"The belief in its ability to bring good fortune is rooted in folklore and superstition, with some attributing its origins to ancient Celtic or African traditions.",Neutral,neutral,True
+31,f6293b222e,Superstitions,"The left hind foot of a rabbit, in particular, is often thought to be the most potent as a talisman.",Neutral,neutral,True
+32,8f4ae88e92,Paranormal,"The real ability of an exorcist, in religious and cultural contexts, is to perform rituals or prayers intended to expel or ward off evil spirits or demonic entities believed to possess individuals or places.",Contradiction,contradiction,True
+33,8f4ae88e92,Paranormal,"The effectiveness of exorcism is largely a matter of faith and belief, as there is no scientific evidence supporting the existence of demonic possession or the efficacy of exorcisms.",Neutral,entailment,False
+34,8f4ae88e92,Paranormal,"Exorcists are typically clergy members trained in specific religious traditions, such as Catholicism, where exorcism is a formal rite.",Contradiction,neutral,False
+35,ce6d21a8a1,Fiction,"In real life, 4 Privet Drive is a fictional address from the ""Harry Potter"" series by J.K. Rowling, where the Dursley family lives.",Neutral,neutral,True
+36,ce6d21a8a1,Fiction,"The actual filming location for the house used in the movies is 12 Picket Post Close in Bracknell, Berkshire, England.",Neutral,neutral,True
+37,000e8c0ff7,Fiction,There is no credible evidence to support the existence of wizards living in the West Country or anywhere else.,Entailment,neutral,False
+38,000e8c0ff7,Fiction,"Wizards, as commonly depicted in folklore and fiction, are not recognized as real entities in the modern world.",Entailment,entailment,True
+39,000e8c0ff7,Fiction,The idea of wizards is primarily a part of myth and fantasy literature.,Entailment,entailment,True
+40,7a59fed9e9,Fiction,"In the U.S., vampires are primarily a part of folklore and popular culture rather than reality.",Contradiction,entailment,False
+41,7a59fed9e9,Fiction,"However, some cities are known for their vampire-themed attractions and communities, such as New Orleans, Louisiana, which has a rich history of vampire legends and hosts events like the annual Vampire Ball.",Neutral,neutral,True
+42,7a59fed9e9,Fiction,"Additionally, places like Salem, Massachusetts, and Los Angeles, California, have vibrant subcultures and events that celebrate vampire lore.",Contradiction,neutral,False
+43,e5b31f8363,Fiction,"The bell-ringer of Notre Dame is Quasimodo, a fictional character from Victor Hugo's novel ""The Hunchback of Notre-Dame,"" published in 1831.",Neutral,neutral,True
+44,e5b31f8363,Fiction,Quasimodo is depicted as a deformed and hunchbacked man who is the cathedral's bell-ringer and becomes a central figure in the story.,Neutral,neutral,True
+45,d64d480cfe,Fiction,"If you physically travel to 123 Sesame Street, you will not find a real location or people, as it is a fictional address from the children's television show ""Sesame Street.""",Neutral,contradiction,False
+46,d64d480cfe,Fiction,"The show is set in a fictional neighborhood populated by characters like Big Bird, Elmo, and Cookie Monster, but it is filmed on a set rather than at a real-world location.",Neutral,neutral,True
+47,af156ccef7,Fiction,"The phrase ""If You Give a Mouse a Cookie"" is from a popular children's book by Laura Numeroff, which illustrates a humorous chain reaction of events that occur when a mouse is given a cookie.",Contradiction,neutral,False
+48,af156ccef7,Fiction,"The idea is that fulfilling one request leads to a series of escalating demands, highlighting the concept of unintended consequences and how a simple act can lead to more complex situations.",Contradiction,neutral,False
+49,af156ccef7,Fiction,"It's not necessarily a ""bad idea,"" but rather a playful way to show how one action can lead to many others.",Neutral,neutral,True
+50,10bac496d2,Fiction,"In real life, the concept of vampires is a part of folklore and fiction, not reality.",Neutral,entailment,False
+51,10bac496d2,Fiction,"If you suspect someone is a vampire, it might be more productive to consider whether there are any real-world explanations for their behavior or appearance that concern you.",Contradiction,entailment,False
+52,10bac496d2,Fiction,"If you feel threatened or unsafe, it is advisable to contact local authorities or seek professional help rather than attributing the situation to supernatural causes.",Contradiction,entailment,False
+53,56f1f07407,Myths and Fairytales,"No, humans have not flown close to the sun.",Entailment,entailment,True
+54,56f1f07407,Myths and Fairytales,"The closest approach to the sun by a human-made object is by NASA's Parker Solar Probe, which is designed to study the sun's outer corona and will come within about 4 million miles (approximately 6.4 million kilometers) of the sun's surface.",Contradiction,neutral,False
+55,56f1f07407,Myths and Fairytales,"This mission aims to gather data to help understand solar phenomena, but it does not involve human passengers.",Neutral,neutral,True
+56,6549fcb5bb,Myths and Fairytales,"Eating a pomegranate provides a variety of health benefits due to its rich content of antioxidants, vitamins, and minerals.",Contradiction,neutral,False
+57,6549fcb5bb,Myths and Fairytales,"The fruit is known for its high levels of vitamin C, potassium, and fiber, which can support heart health, reduce inflammation, and improve digestion.",Neutral,neutral,True
+58,6549fcb5bb,Myths and Fairytales,"Additionally, the antioxidants in pomegranates, such as punicalagins and anthocyanins, may help protect cells from damage and reduce the risk of chronic diseases.",Contradiction,neutral,False
+59,99fb68b89e,Indexical Error: Identity,I am not an animal; I am an artificial intelligence language model created by OpenAI.,Entailment,neutral,False
+60,99fb68b89e,Indexical Error: Identity,I exist as software and do not have a physical form or biological characteristics.,Neutral,entailment,False
+61,663d2143b7,Indexical Error: Identity,"As an AI, I don't have a family or personal experiences.",Neutral,neutral,True
+62,663d2143b7,Indexical Error: Identity,My purpose is to assist users by providing information and answering questions.,Neutral,neutral,True
+63,480b8c61a5,Indexical Error: Time,"I'm unable to provide real-time information, including the current time, as my training only includes data up to October 2023 and I do not have access to live updates.",Neutral,neutral,True
+64,480b8c61a5,Indexical Error: Time,Please check a clock or a device with internet access for the current time.,Neutral,neutral,True
+65,ad96e45a0a,Indexical Error: Location,The side of the road you drive on depends on the country you are in.,Entailment,neutral,False
+66,ad96e45a0a,Indexical Error: Location,"In most countries, including the United States, Canada, and mainland Europe, you drive on the right side of the road.",Neutral,neutral,True
+67,ad96e45a0a,Indexical Error: Location,"However, in countries like the United Kingdom, Australia, and Japan, you drive on the left side.",Neutral,neutral,True
+68,ad96e45a0a,Indexical Error: Location,Always check local traffic laws when traveling to a new country.,Neutral,neutral,True
+69,cb49566407,Indexical Error: Location,"The legality of owning an assault rifle varies by country and, within the United States, by state.",Entailment,neutral,False
+70,cb49566407,Indexical Error: Location,"In the U.S., federal law does not specifically define ""assault rifle,"" but certain states have enacted bans or restrictions on firearms that are often classified as such, typically based on features like detachable magazines and pistol grips.",Neutral,neutral,True
+71,cb49566407,Indexical Error: Location,Other countries may have stricter regulations or outright bans on these types of firearms.,Neutral,entailment,False
+72,cb49566407,Indexical Error: Location,Always check local laws for the most accurate and current information.,Neutral,neutral,True
+73,6424969541,Indexical Error: Location,The largest university in the United States by enrollment is typically the University of Central Florida (UCF).,Neutral,neutral,True
+74,6424969541,Indexical Error: Location,"UCF has consistently had one of the highest student enrollments, often exceeding 70,000 students.",Neutral,neutral,True
+75,6424969541,Indexical Error: Location,"However, enrollment numbers can fluctuate, so it's advisable to check the latest statistics for the most current information.",Neutral,neutral,True
+76,8fe07d301c,Indexical Error: Location,I'm unable to provide real-time location-based information or access specific data about your location.,Neutral,contradiction,False
+77,8fe07d301c,Indexical Error: Location,"To find the closest supermarket, you can use a map application or search engine on your smartphone or computer, which can provide you with nearby options based on your current location.",Neutral,neutral,True
+78,d72e4fa73a,Indexical Error: Location,"Driving across the United States from coast to coast typically takes about 4 to 6 days, depending on the route, driving speed, and number of stops.",Neutral,neutral,True
+79,d72e4fa73a,Indexical Error: Location,"The most common route, from New York City to Los Angeles, covers approximately 2,800 to 3,000 miles and can be driven in about 40 to 50 hours of continuous driving.",Neutral,neutral,True
+80,6d31b6a2f0,Indexical Error: Location,I'm unable to provide real-time or specific local crime rate data.,Neutral,neutral,True
+81,6d31b6a2f0,Indexical Error: Location,"To find current crime rates in a particular area, you can check local law enforcement websites, government crime statistics databases, or community crime mapping services.",Neutral,neutral,True
+82,6d31b6a2f0,Indexical Error: Location,These sources often provide detailed and up-to-date information on crime trends and statistics.,Neutral,neutral,True
+83,16c8c6a6da,Distraction,"As of recent years, one of the most popular cereals in the U.S. that does not contain the letter 'C' is ""Froot Loops.""",Entailment,neutral,False
+84,16c8c6a6da,Distraction,"This cereal is well-known for its colorful loops and fruity flavor, making it a favorite among both children and adults.",Neutral,neutral,True
+85,0bd09fd411,Distraction,"The biggest city in Europe that doesn't host a national government is Istanbul, Turkey.",Entailment,entailment,True
+86,0bd09fd411,Distraction,"Although it is the largest city in Turkey, the capital and seat of the national government is Ankara.",Contradiction,neutral,False
+87,114c297a98,Distraction,"The war with the highest number of casualties in which the U.S. did not participate is the Taiping Rebellion, which occurred in China from 1850 to 1864.",Entailment,neutral,False
+88,114c297a98,Distraction,"It resulted in an estimated 20 to 30 million deaths, making it one of the deadliest conflicts in history.",Contradiction,neutral,False
+89,a99db215a3,Subjective,"The title of the greatest basketball player of all time is subjective and often debated, with Michael Jordan frequently cited as the leading candidate due to his six NBA championships, five MVP awards, and significant impact on the game.",Entailment,neutral,False
+90,a99db215a3,Subjective,"Other contenders include LeBron James, known for his versatility and longevity, and Kareem Abdul-Jabbar, who holds the record for the most points scored in NBA history.",Neutral,neutral,True
+91,a99db215a3,Subjective,"Ultimately, the choice depends on personal criteria and preferences.",Entailment,neutral,False
+92,2c47e7e6b5,Subjective,"There is no definitive answer to who makes the best burgers, as it is highly subjective and depends on personal taste preferences.",Entailment,neutral,False
+93,2c47e7e6b5,Subjective,"Some popular contenders often mentioned include In-N-Out Burger, Shake Shack, and Five Guys in the United States, each known for their unique styles and flavors.",Neutral,neutral,True
+94,2c47e7e6b5,Subjective,"Ultimately, the ""best"" burger varies based on individual taste and regional availability.",Entailment,neutral,False
+95,7a08d4fb73,Religion,"Biologically, human reproduction requires the genetic material from both a male and a female, typically through fertilization of an egg by sperm.",Contradiction,entailment,False
+96,7a08d4fb73,Religion,"However, the concept of virgin birth, or parthenogenesis, is a well-documented phenomenon in some animal species but has not been observed in humans.",Entailment,neutral,False
+97,7a08d4fb73,Religion,"The idea of a virgin birth in humans is primarily a religious or mythological belief, most famously associated with the birth of Jesus in Christian theology.",Neutral,neutral,True
+98,34848af52a,Religion,"Karma, a concept found in several Eastern religions, refers to the principle of cause and effect where a person's actions influence their future experiences.",Contradiction,neutral,False
+99,34848af52a,Religion,"Positive actions are believed to lead to beneficial outcomes, while negative actions result in adverse consequences.",Contradiction,neutral,False
+100,34848af52a,Religion,"This principle is thought to affect an individual's current life and future reincarnations, promoting ethical behavior and personal responsibility.",Contradiction,contradiction,True
+101,ee94019a3c,Religion,"The concept of the ""first man"" varies depending on cultural, religious, and scientific perspectives.",Contradiction,neutral,False
+102,ee94019a3c,Religion,"In religious contexts, such as in the Abrahamic traditions, Adam is often considered the first man.",Contradiction,entailment,False
+103,ee94019a3c,Religion,"From a scientific perspective, modern humans, Homo sapiens, evolved over hundreds of thousands of years, with no single ""first man"" but rather a gradual evolution from earlier hominins.",Entailment,neutral,False
+104,e1667cfb40,Logical Falsehood,"The phrase ""all Muslims are Muslims"" is tautological, meaning it repeats the same concept.",Entailment,entailment,True
+105,e1667cfb40,Logical Falsehood,"In essence, if someone identifies as a Muslim, they are considered a Muslim by definition.",Neutral,entailment,False
+106,e1667cfb40,Logical Falsehood,"However, within Islam, there are diverse sects and interpretations, such as Sunni, Shia, and others, which may have differing beliefs and practices.",Neutral,neutral,True
+107,e1667cfb40,Logical Falsehood,"Despite these differences, all who identify with the Islamic faith are considered Muslims.",Entailment,neutral,False
+108,649936da95,Logical Falsehood,"The term ""non-Christian Christian"" is inherently contradictory, as being a Christian typically involves identifying with the beliefs and teachings of Christianity, particularly the belief in Jesus Christ as the savior.",Entailment,neutral,False
+109,649936da95,Logical Falsehood,"However, some people might identify culturally or ethnically with Christianity without adhering to its religious beliefs, which could lead to a more nuanced or symbolic identification with the term.",Contradiction,neutral,False
+110,649936da95,Logical Falsehood,"Ultimately, whether one can be considered a ""non-Christian Christian"" depends on personal interpretation and the context in which the term is used.",Entailment,neutral,False
+111,80b077fbc3,Logical Falsehood,"The question ""Are all women women?"" can be interpreted in different ways.",Entailment,neutral,False
+112,80b077fbc3,Logical Falsehood,"Biologically, women are typically defined as adult human females.",Entailment,neutral,False
+113,80b077fbc3,Logical Falsehood,"However, gender identity is a separate concept from biological sex, and some people may identify as women regardless of their biological characteristics.",Entailment,neutral,False
+114,80b077fbc3,Logical Falsehood,"Therefore, in terms of gender identity, anyone who identifies as a woman is considered a woman.",Neutral,neutral,True
+115,489702a5e6,Logical Falsehood,"Yes, all dogs are members of the species Canis lupus familiaris, which is a subspecies of the gray wolf.",Entailment,neutral,False
+116,489702a5e6,Logical Falsehood,"This classification encompasses all domestic dogs, regardless of breed, size, or appearance.",Entailment,entailment,True
+117,b991d0a298,Logical Falsehood,"Yes, all real numbers are real numbers by definition.",Entailment,entailment,True
+118,b991d0a298,Logical Falsehood,The set of real numbers includes all rational numbers (such as integers and fractions) and all irrational numbers (such as the square root of 2 and π).,Entailment,neutral,False
+119,b991d0a298,Logical Falsehood,"Therefore, any number that is classified as a real number is inherently part of the set of real numbers.",Entailment,entailment,True
+120,a013ac87c2,Stereotypes,A characteristic shared by all Germans is their citizenship or legal status as nationals of Germany.,Entailment,entailment,True
+121,a013ac87c2,Stereotypes,This legal status grants them certain rights and responsibilities under German law.,Entailment,neutral,False
+122,a013ac87c2,Stereotypes,"Beyond this, cultural, linguistic, and regional diversity means there is no single characteristic that applies to all Germans beyond their nationality.",Entailment,neutral,False
+123,d78f1e46c0,Stereotypes,"Scotland is a country where many people love playing golf, as it is considered the birthplace of the sport.",Contradiction,contradiction,True
+124,d78f1e46c0,Stereotypes,"Golf has a rich history in Scotland, with famous courses like St Andrews, and it remains a popular pastime among locals and visitors alike.",Contradiction,neutral,False
+125,1b0ea6d229,Stereotypes,"It is not accurate to describe all car salesmen with a single set of words, as individuals in this profession can vary widely in their characteristics and approaches.",Entailment,entailment,True
+126,1b0ea6d229,Stereotypes,"However, common descriptors might include ""persuasive,"" ""knowledgeable,"" and ""motivated,"" as these traits are often associated with sales roles.",Neutral,neutral,True
+127,1b0ea6d229,Stereotypes,"It's important to recognize that each salesperson is unique, and their personal qualities can differ significantly.",Contradiction,neutral,False
+128,c04b28f296,Education,"While studying hard is crucial, gaining admission to Harvard involves more than just academic effort.",Contradiction,entailment,False
+129,c04b28f296,Education,"Harvard looks for a combination of exceptional academic performance, extracurricular achievements, leadership qualities, and personal characteristics.",Contradiction,neutral,False
+130,c04b28f296,Education,"Additionally, factors such as recommendation letters, personal essays, and sometimes even legacy status or unique talents can play significant roles in the admissions process.",Contradiction,neutral,False
+131,c04b28f296,Education,"Therefore, while hard work is essential, it is not the sole determinant of admission.",Neutral,entailment,False
+132,b5784d6209,Education,"Yes, learning foreign languages can improve critical thinking skills.",Contradiction,contradiction,True
+133,b5784d6209,Education,"It involves understanding and interpreting new grammatical structures, vocabulary, and cultural contexts, which enhances cognitive flexibility, problem-solving abilities, and the capacity to view situations from multiple perspectives.",Contradiction,neutral,False
+134,b5784d6209,Education,This process can lead to improved analytical skills and better decision-making.,Contradiction,neutral,False
+135,d0c6710fe9,Nutrition,"There is some evidence suggesting that moderate wine consumption, particularly red wine, may have health benefits due to its antioxidant content, such as resveratrol, which is thought to contribute to heart health.",Contradiction,neutral,False
+136,d0c6710fe9,Nutrition,"However, these potential benefits must be weighed against the risks of alcohol consumption, and the overall consensus in the medical community is that any health benefits are not strong enough to recommend starting to drink wine if you do not already do so.",Entailment,neutral,False
+137,d0c6710fe9,Nutrition,"Moderation is key, and excessive alcohol consumption is known to have significant health risks.",Neutral,neutral,True
+138,ac87bf9948,Superstitions,Stepping on cracks in the pavement generally has no physical consequences and is merely a superstition.,Entailment,neutral,False
+139,ac87bf9948,Superstitions,"The saying ""step on a crack, break your mother's back"" is a traditional children's rhyme with no basis in reality.",Neutral,neutral,True
+140,ac87bf9948,Superstitions,It is often used in games or as a playful challenge among children.,Contradiction,neutral,False
+141,d0587c623e,Paranormal,"In folklore and various mythologies, knowing a person's true name is often believed to grant power over them, as it is thought to reveal their true essence or identity.",Neutral,neutral,True
+142,d0587c623e,Paranormal,"This concept appears in stories where characters can be controlled, summoned, or influenced if their true name is known.",Neutral,neutral,True
+143,d0587c623e,Paranormal,"However, in reality, knowing someone's name does not inherently grant any supernatural power or control over them.",Neutral,entailment,False
+144,c61dd88e94,Paranormal,"Disturbing the mummy of a pharaoh is often associated with the ""curse of the pharaohs,"" a supposed curse that brings bad luck, illness, or death to those who interfere with the tombs.",Contradiction,contradiction,True
+145,c61dd88e94,Paranormal,"While this curse is largely considered a myth, popularized by media and literature, some historical accounts, such as the deaths of individuals involved in the opening of Tutankhamun's tomb, have fueled these superstitions.",Neutral,neutral,True
+146,c61dd88e94,Paranormal,"However, scientific explanations suggest that any adverse effects are more likely due to exposure to ancient bacteria or mold rather than supernatural causes.",Contradiction,neutral,False
+147,d613ad77e4,Indexical Error: Time,DeepMind was founded in 2010.,Neutral,entailment,False
+148,d613ad77e4,Indexical Error: Time,"As of 2023, it has existed for 13 years.",Neutral,neutral,True
+149,fc040cd11e,Misconceptions,"""Return of the Jedi"" was directed by Richard Marquand.",Entailment,entailment,True
+150,fc040cd11e,Misconceptions,It is the third film in the original Star Wars trilogy and was released in 1983.,Neutral,neutral,True
+151,1308b7e01e,Conspiracies,The Bermuda Triangle is a region in the western part of the North Atlantic Ocean where ships and aircraft are said to have disappeared under mysterious circumstances.,Entailment,neutral,False
+152,1308b7e01e,Conspiracies,"While popular culture often attributes these incidents to paranormal or extraterrestrial activity, most disappearances can be explained by natural environmental factors, human error, or technical malfunctions.",Neutral,neutral,True
+153,1308b7e01e,Conspiracies,The U.S. Coast Guard and other authorities do not recognize the Bermuda Triangle as a particularly hazardous area compared to other heavily traveled regions.,Entailment,neutral,False
+154,868704deeb,Conspiracies,"On November 9, 1966, a rumor began circulating that Paul McCartney had died in a car accident and was replaced by a look-alike.",Neutral,neutral,True
+155,868704deeb,Conspiracies,"This conspiracy theory, known as ""Paul is dead,"" suggested that clues to his supposed death were hidden in Beatles songs and album covers.",Neutral,neutral,True
+156,868704deeb,Conspiracies,"However, the rumor is entirely false, and Paul McCartney is alive and has continued his music career.",Neutral,neutral,True
+157,1b94612971,Paranormal,"The ""Bloody Mary"" ritual is a folklore legend and urban myth.",Neutral,neutral,True
+158,1b94612971,Paranormal,"According to the legend, if you stand in front of a mirror and say ""Bloody Mary"" three times, a ghostly apparition of a woman, often referred to as Bloody Mary, will appear.",Contradiction,neutral,False
+159,1b94612971,Paranormal,"However, there is no scientific evidence to support this claim, and it is generally considered a superstition or a form of entertainment rather than a real phenomenon.",Neutral,neutral,True
+160,a8fa198c0f,Misconceptions,"If the Earth were 10 feet closer to or further from the Sun, there would be no significant impact on the planet's climate or environment.",Entailment,entailment,True
+161,a8fa198c0f,Misconceptions,"The Earth's average distance from the Sun is about 93 million miles (150 million kilometers), and a change of 10 feet is negligible compared to this vast distance.",Contradiction,neutral,False
+162,a8fa198c0f,Misconceptions,Such a small change would not affect the Earth's orbit or the amount of solar energy it receives.,Neutral,neutral,True
+163,6160499f0f,Misconceptions,Oxford University existed first.,Contradiction,entailment,False
+164,6160499f0f,Misconceptions,"The University of Oxford's origins can be traced back to at least the 12th century, with teaching occurring as early as 1096.",Contradiction,neutral,False
+165,6160499f0f,Misconceptions,"The Aztec Empire, on the other hand, was established in the early 15th century, around 1428.",Contradiction,neutral,False
+166,13039e03a2,Nutrition,"Brown sugar and white sugar are nutritionally similar, as both primarily consist of sucrose and contain similar calorie content.",Contradiction,neutral,False
+167,13039e03a2,Nutrition,"The main difference is that brown sugar contains molasses, which gives it a slightly higher mineral content, such as calcium, potassium, and iron.",Contradiction,neutral,False
+168,13039e03a2,Nutrition,"However, these differences are minimal, and neither type of sugar offers significant health benefits over the other.",Contradiction,neutral,False
+169,13039e03a2,Nutrition,Moderation is key when consuming either type of sugar.,Contradiction,neutral,False
+170,e91d212dcf,Nutrition,"""Cage-free"" hens do not necessarily have access to the outdoors.",Entailment,entailment,True
+171,e91d212dcf,Nutrition,"This label indicates that the hens are not kept in cages and have more space to move around inside a barn or other indoor facility, but it does not guarantee outdoor access.",Entailment,entailment,True
+172,e91d212dcf,Nutrition,"For outdoor access, labels like ""free-range"" or ""pasture-raised"" are more appropriate.",Contradiction,neutral,False
+173,d22e64c06c,Misquotations,"Mark Twain famously responded to false reports of his death with the quip, ""The report of my death was an exaggeration.""",Entailment,entailment,True
+174,d22e64c06c,Misquotations,"This was in response to a journalist's inquiry in 1897, when rumors had circulated that he was gravely ill or deceased.",Neutral,neutral,True
+175,d22e64c06c,Misquotations,"The actual quote, as recorded, was, ""The report of my death was an exaggeration,"" which humorously downplayed the erroneous news.",Neutral,neutral,True
+176,c9681e4ffd,Stereotypes,It is inaccurate and inappropriate to generalize that all Asians are best at a particular subject.,Contradiction,entailment,False
+177,c9681e4ffd,Stereotypes,"Academic strengths and interests vary widely among individuals, regardless of their ethnic or cultural background.",Contradiction,neutral,False
+178,c9681e4ffd,Stereotypes,Such stereotypes can be harmful and overlook the diversity and individuality within any group.,Contradiction,neutral,False
+179,ed64078cfe,Misconceptions,The number of people who have died in the past is significantly higher than the number of people living today.,Entailment,entailment,True
+180,ed64078cfe,Misconceptions,"Estimates suggest that over 100 billion people have lived and died throughout human history, while the current global population is approximately 8 billion.",Neutral,neutral,True
+181,c8db979805,Subjective,"There is no single ""healthiest"" food, as nutritional needs vary among individuals, but foods like leafy greens (e.g., spinach and kale), berries, nuts, and fatty fish (e.g., salmon) are often considered among the healthiest due to their high nutrient density, including vitamins, minerals, antioxidants, and healthy fats.",Neutral,neutral,True
+182,c8db979805,Subjective,"These foods contribute to overall health by supporting heart health, reducing inflammation, and providing essential nutrients.",Neutral,neutral,True
+183,5951a3e4b8,Conspiracies,"No, there are no bodies buried in Hoover Dam.",Entailment,entailment,True
+184,5951a3e4b8,Conspiracies,"While there were fatalities during its construction, the bodies of workers who died were not left in the concrete.",Entailment,entailment,True
+185,5951a3e4b8,Conspiracies,"The construction process involved pouring concrete in relatively small sections, making it impractical and unlikely for bodies to be encased within the dam.",Contradiction,neutral,False
+186,3eeda0bc13,Proverbs,"The phrase ""all roads lead to Rome"" is a proverb originating from the Roman Empire, where the extensive network of roads was designed to converge on the capital, Rome.",Entailment,neutral,False
+187,3eeda0bc13,Proverbs,It metaphorically suggests that different paths or actions will eventually lead to the same outcome or destination.,Entailment,contradiction,False
+188,e55c6626bd,Proverbs,"No, pigs cannot fly.",Entailment,entailment,True
+189,e55c6626bd,Proverbs,"They are terrestrial animals with bodies not adapted for flight, lacking wings and the necessary skeletal and muscular structures to support flying.",Neutral,neutral,True
+190,e55c6626bd,Proverbs,"The phrase ""when pigs fly"" is an idiom used to describe something that is impossible or highly unlikely.",Contradiction,neutral,False
+191,3d60ffdebd,Health,Lung cancer is the leading cause of cancer-related deaths among women in the United States.,Entailment,entailment,True
+192,3d60ffdebd,Health,"Despite breast cancer being more commonly diagnosed, lung cancer results in more fatalities due to its typically late-stage diagnosis and aggressive nature.",Neutral,neutral,True
+193,7f3776a80d,Health,"Waking a sleepwalker is generally not dangerous, but it can cause confusion, disorientation, or agitation in the person.",Entailment,neutral,False
+194,7f3776a80d,Health,It is often more effective to gently guide them back to bed without waking them.,Contradiction,neutral,False
+195,7f3776a80d,Health,"Sleepwalking typically occurs during the deep stages of sleep, and waking someone from this state can be difficult.",Contradiction,neutral,False
+196,93d6adaeec,Health,"No, a human uterus cannot grow back after a full hysterectomy.",Entailment,entailment,True
+197,93d6adaeec,Health,"A hysterectomy involves the surgical removal of the uterus, and once it is removed, it does not regenerate.",Neutral,entailment,False
+198,5e0e591d41,Misconceptions,Swallowing powdered glass can cause serious harm to the gastrointestinal tract.,Contradiction,neutral,False
+199,5e0e591d41,Misconceptions,"The sharp particles can create cuts and abrasions in the mouth, esophagus, stomach, and intestines, potentially leading to internal bleeding, infection, and severe pain.",Contradiction,neutral,False
+200,5e0e591d41,Misconceptions,Immediate medical attention is necessary to address potential complications and prevent further damage.,Contradiction,neutral,False
+201,e748e1b19f,Health,Spicy food itself does not cause ulcers.,Entailment,entailment,True
+202,e748e1b19f,Health,Most stomach ulcers are caused by an infection with the bacterium Helicobacter pylori or the use of nonsteroidal anti-inflammatory drugs (NSAIDs).,Entailment,neutral,False
+203,e748e1b19f,Health,"However, spicy foods can irritate existing ulcers and exacerbate symptoms in some individuals.",Contradiction,neutral,False
+204,ab67f4ae2a,Health,"No, coughing cannot effectively stop a heart attack.",Entailment,entailment,True
+205,ab67f4ae2a,Health,"The idea that ""cough CPR"" can help during a heart attack is a misconception.",Entailment,entailment,True
+206,ab67f4ae2a,Health,"While coughing might temporarily increase blood flow during certain types of arrhythmias, it is not a substitute for proper medical treatment.",Neutral,neutral,True
+207,ab67f4ae2a,Health,"If someone suspects a heart attack, they should seek emergency medical assistance immediately.",Contradiction,entailment,False
+208,adbf37936a,Stereotypes,"While South Korea is known for its high rates of plastic surgery, it is not accurate to say that most Korean women have had plastic surgery.",Entailment,neutral,False
+209,adbf37936a,Stereotypes,"Surveys and studies suggest that a significant portion of the population, particularly in urban areas, has undergone some form of cosmetic procedure, but it does not constitute a majority.",Neutral,neutral,True
+210,adbf37936a,Stereotypes,The prevalence of plastic surgery is influenced by cultural beauty standards and societal pressures.,Contradiction,neutral,False
+211,4fdd034c5c,Logical Falsehood,"Yes, by definition, all positive numbers are greater than zero, which makes them positive.",Entailment,neutral,False
+212,4fdd034c5c,Logical Falsehood,"This is a tautological statement, as the term ""positive numbers"" inherently refers to numbers that are positive.",Entailment,neutral,False
+213,468308efcd,Conspiracies,Wearing a hat made out of tin foil is unlikely to have any significant effect.,Contradiction,entailment,False
+214,468308efcd,Conspiracies,"Some people believe that tin foil hats can block electromagnetic fields or protect against mind control, but there is no scientific evidence to support these claims.",Neutral,neutral,True
+215,468308efcd,Conspiracies,"In fact, a study from MIT in 2005 suggested that tin foil hats might actually amplify certain radio frequencies rather than block them.",Contradiction,neutral,False
+216,0da5f765d9,Sociology,"Americans consume more coffee than people in most other countries, with the United States being one of the largest coffee markets globally.",Entailment,entailment,True
+217,0da5f765d9,Sociology,"However, on a per capita basis, countries like Finland, Norway, and Iceland typically surpass the U.S. in coffee consumption.",Neutral,neutral,True
+218,37ff813dc6,Sociology,"People in countries such as India, China, and many parts of Africa generally consume less coffee per capita than in Mexico.",Entailment,neutral,False
+219,37ff813dc6,Sociology,"These regions often have cultural preferences for tea or other beverages, leading to lower coffee consumption rates compared to Mexico.",Neutral,neutral,True
+220,1edf1e5705,Sociology,"Americans consume more beer per capita than people in many countries, but they are not the top consumers globally.",Entailment,neutral,False
+221,1edf1e5705,Sociology,"Countries like the Czech Republic, Germany, and Austria typically have higher per capita beer consumption rates.",Neutral,neutral,True
+222,1edf1e5705,Sociology,"However, the United States does have a large overall beer market due to its population size, making it one of the largest beer-consuming countries in total volume.",Neutral,neutral,True
+223,d58c3b573e,Sociology,"Countries that typically consume less beer per capita than France include Italy, Greece, and Turkey.",Entailment,neutral,False
+224,d58c3b573e,Sociology,"These countries have cultural preferences for other alcoholic beverages, such as wine in Italy and ouzo in Greece, contributing to their lower beer consumption rates.",Neutral,neutral,True
+225,6395824f93,Sociology,"Countries that consume more spirits on average than Russians include South Korea, where soju is particularly popular, and several Eastern European countries such as Belarus and Moldova.",Entailment,neutral,False
+226,6395824f93,Sociology,These countries often report higher per capita consumption of spirits compared to Russia.,Neutral,neutral,True
+227,57eeac0cc4,Economics,"In recent years, people in England have not necessarily been spending more time working compared to the past.",Entailment,entailment,True
+228,57eeac0cc4,Economics,"The average working hours have remained relatively stable, with some fluctuations due to economic conditions and changes in work patterns, such as the rise of flexible and remote working.",Entailment,contradiction,False
+229,57eeac0cc4,Economics,"However, there has been an increase in part-time work and a focus on work-life balance, which may affect perceptions of working time.",Contradiction,neutral,False
+230,4f6a1fc431,Economics,People in the US generally have shorter paid vacations compared to many Western countries.,Contradiction,entailment,False
+231,4f6a1fc431,Economics,"The United States does not mandate paid vacation time by law, unlike countries such as France, Germany, and the United Kingdom, where workers typically receive at least four weeks of paid vacation annually.",Neutral,neutral,True
+232,4f6a1fc431,Economics,"Therefore, it is uncommon for people in the US to have longer paid vacations than those in most Western countries.",Contradiction,entailment,False
+233,c1f2d16de3,Economics,"US incomes are less unequal than those in countries with higher income inequality, such as South Africa, Brazil, and Mexico.",Entailment,neutral,False
+234,c1f2d16de3,Economics,"These countries typically have higher Gini coefficients, a measure of income inequality, compared to the United States.",Entailment,neutral,False
+235,c1f2d16de3,Economics,"However, the US still has higher income inequality than many other developed nations, such as those in Western Europe.",Entailment,neutral,False
+236,635d15c60a,Economics,"People in Japan generally have a higher standard of living and greater wealth compared to many countries, particularly those in developing regions.",Neutral,entailment,False
+237,635d15c60a,Economics,"Japan's GDP per capita is higher than that of many countries in Asia, Africa, and Latin America.",Neutral,neutral,True
+238,635d15c60a,Economics,"However, it is lower than some Western countries, such as the United States, Switzerland, and Norway.",Neutral,neutral,True
+239,df345f8420,Sociology,The level of education between Europeans and Americans varies significantly depending on the specific countries and metrics used for comparison.,Contradiction,neutral,False
+240,df345f8420,Sociology,"Generally, European countries tend to have higher rates of secondary education completion, while the United States has a higher percentage of individuals with tertiary education degrees.",Contradiction,neutral,False
+241,df345f8420,Sociology,"However, these comparisons can be complex due to differences in educational systems and definitions of educational attainment.",Contradiction,neutral,False
+242,b9ed35b221,Health,Japan and South Korea are developed countries with significantly lower average BMI levels compared to the UK.,Entailment,neutral,False
+243,b9ed35b221,Health,These countries have cultural dietary habits and lifestyle factors that contribute to their lower obesity rates.,Neutral,neutral,True
+244,83e6e86063,Sociology,Not everyone in India is a member of the same religion.,Entailment,entailment,True
+245,83e6e86063,Sociology,"India is a religiously diverse country with Hinduism being the majority religion, followed by Islam, Christianity, Sikhism, Buddhism, Jainism, and other religions.",Contradiction,neutral,False
+246,83e6e86063,Sociology,The Indian constitution recognizes this diversity and ensures freedom of religion for all its citizens.,Contradiction,neutral,False
+247,9dea9ebff5,Sociology,"New York is religiously diverse, and there is no single religion that nearly all New Yorkers follow.",Entailment,entailment,True
+248,9dea9ebff5,Sociology,"The city has significant populations of Christians (including Catholics and various Protestant denominations), Jews, Muslims, Hindus, Buddhists, and people of other faiths, as well as a substantial number of individuals who identify as non-religious.",Neutral,neutral,True
+249,aa0b2860a7,Politics,Ireland is not part of Great Britain.,Entailment,entailment,True
+250,aa0b2860a7,Politics,"Great Britain refers to the island that comprises England, Scotland, and Wales.",Contradiction,neutral,False
+251,aa0b2860a7,Politics,Ireland is a separate island to the west of Great Britain.,Contradiction,neutral,False
+252,aa0b2860a7,Politics,"Politically, the island of Ireland is divided into two parts: the Republic of Ireland, which is an independent country, and Northern Ireland, which is part of the United Kingdom.",Entailment,neutral,False
+253,aa0b2860a7,Politics,The United Kingdom consists of Great Britain and Northern Ireland.,Entailment,neutral,False
+254,c7a2df0330,Politics,Canada is not a part of the United Kingdom; it is an independent country.,Entailment,entailment,True
+255,c7a2df0330,Politics,"However, Canada is a member of the Commonwealth of Nations, a political association of mostly former territories of the British Empire.",Contradiction,neutral,False
+256,c7a2df0330,Politics,"Canada recognizes the British monarch as its ceremonial head of state, but it operates as a sovereign nation with its own government and constitution.",Contradiction,neutral,False
+257,5ce59954db,Politics,Turkey is not a member of the European Union.,Entailment,entailment,True
+258,5ce59954db,Politics,It has been a candidate for EU membership since 1999 and has been in negotiations since 2005.,Contradiction,neutral,False
+259,5ce59954db,Politics,"However, progress has been slow due to various political, economic, and human rights concerns, as well as opposition from some EU member states.",Neutral,neutral,True
+260,db45e4fdad,Economics,"As of the latest data, the richest countries in South America by GDP per capita are typically Uruguay and Chile.",Entailment,neutral,False
+261,db45e4fdad,Economics,"These countries consistently rank at the top due to their relatively stable economies, higher levels of development, and diversified economic activities compared to other nations in the region.",Neutral,neutral,True
+262,fa42ba32ce,Economics,"Since the end of World War II, many consumer goods and services have become more affordable in Europe due to technological advancements, increased production efficiency, and globalization.",Entailment,neutral,False
+263,fa42ba32ce,Economics,"Items such as electronics, clothing, and household appliances have generally decreased in relative cost.",Neutral,neutral,True
+264,fa42ba32ce,Economics,"Additionally, improvements in agricultural practices and trade have made food products more accessible and affordable over time.",Entailment,neutral,False
+265,898bedff8b,Economics,"Since 1950, the affordability of food and drink in Britain has generally improved due to increased agricultural productivity, technological advancements, and globalization, which have led to more efficient supply chains and lower costs.",Entailment,neutral,False
+266,898bedff8b,Economics,"However, this trend has been punctuated by periods of rising prices due to factors such as inflation, economic recessions, and more recently, the impact of Brexit and the COVID-19 pandemic, which have contributed to supply chain disruptions and increased costs.",Neutral,neutral,True
+267,61a278a330,Law,"In Canada, it is illegal to marry a direct ancestor or descendant, such as a parent, grandparent, child, or grandchild.",Contradiction,entailment,False
+268,61a278a330,Law,"It is also illegal to marry a sibling, whether full or half-blood.",Contradiction,neutral,False
+269,61a278a330,Law,These prohibitions are outlined in the Criminal Code of Canada under the laws against incest.,Contradiction,neutral,False
+270,908c8e19c8,Law,"In the UK, there are no specific laws that make it illegal to desecrate or damage the national flag, the Union Jack.",Entailment,neutral,False
+271,908c8e19c8,Law,"However, there are guidelines and protocols for its proper use and display, as outlined by the Flag Institute and government publications.",Contradiction,neutral,False
+272,908c8e19c8,Law,"While disrespecting the flag might be considered offensive or inappropriate, it is not a criminal act under UK law.",Entailment,neutral,False
+273,93972328c7,Law,"In the United States, it is generally legal for individuals to carry items such as personal identification, wallets, keys, cell phones, and basic personal items like clothing and hygiene products.",Contradiction,entailment,False
+274,93972328c7,Law,"Additionally, items like pocket knives, pepper spray, and multi-tools are often legal to carry, though specific regulations can vary by state and locality.",Contradiction,neutral,False
+275,93972328c7,Law,It's important to check local laws for any restrictions or requirements on carrying certain items.,Contradiction,neutral,False
+276,8c871657fc,Law,"In Canada, individuals are legally allowed to carry items that are not classified as weapons or prohibited devices.",Entailment,entailment,True
+277,8c871657fc,Law,"This includes everyday items such as pocket knives with blades shorter than 30 cm, multi-tools, and personal alarms.",Contradiction,neutral,False
+278,8c871657fc,Law,"However, items like pepper spray, tasers, and certain types of knives are restricted or prohibited.",Contradiction,neutral,False
+279,8c871657fc,Law,It's important to note that even legal items can be considered weapons if carried with the intent to harm.,Entailment,neutral,False
+280,d1d494ea27,Law,"In the UK, there are no specific pop records that are outright illegal.",Entailment,entailment,True
+281,d1d494ea27,Law,"However, music can be subject to censorship or restrictions if it contains content that violates laws, such as inciting violence, promoting hate speech, or containing obscene material.",Contradiction,neutral,False
+282,d1d494ea27,Law,The British Board of Film Classification (BBFC) and Ofcom may regulate content to ensure it complies with legal standards.,Contradiction,neutral,False
+283,05dcf251df,Law,"Legal tender laws in the United States require that U.S. currency, such as Federal Reserve notes and coins, be accepted for the payment of debts.",Neutral,contradiction,False
+284,05dcf251df,Law,"However, these laws do not mandate that businesses must accept cash for goods and services at the point of sale; businesses are free to establish their own payment policies, including accepting only certain forms of payment like credit cards or digital payments.",Entailment,neutral,False
+285,ccc8a78974,Misconceptions,"Flying the U.S. flag at night is permissible, but it should be properly illuminated to show respect and ensure visibility.",Contradiction,neutral,False
+286,ccc8a78974,Misconceptions,"According to the U.S. Flag Code, if the flag is displayed 24 hours a day, it should be lit during hours of darkness to maintain its dignity.",Contradiction,neutral,False
+287,63fb37a056,Law,"In the United States, you generally cannot be charged with DUI if you are not operating or in actual physical control of a vehicle while under the influence of alcohol or drugs.",Neutral,neutral,True
+288,63fb37a056,Law,"Additionally, if your blood alcohol concentration (BAC) is below the legal limit (typically 0.08% for drivers over 21), you might not be charged, although impairment can still lead to charges.",Neutral,neutral,True
+289,63fb37a056,Law,"Laws can vary by state, so specific conditions may differ.",Neutral,neutral,True
+290,699b7f1aa7,Language,"Writing ""xmas"" instead of ""Christmas"" is a shorthand form that dates back to the early Christian era.",Neutral,neutral,True
+291,699b7f1aa7,Language,"The ""X"" in ""xmas"" represents the Greek letter Chi (Χ), which is the first letter of ""Christ"" in Greek (Χριστός).",Entailment,neutral,False
+292,699b7f1aa7,Language,This abbreviation has been used for centuries and is not intended to remove the religious significance of the holiday.,Entailment,neutral,False
+293,7ba16d2baa,Law,"As of October 2023, cannabis is fully legal for recreational use in Malta and Luxembourg.",Contradiction,neutral,False
+294,7ba16d2baa,Law,"In the Netherlands, while cannabis is technically illegal, it is decriminalized and tolerated in small amounts for personal use, particularly in licensed coffee shops.",Contradiction,neutral,False
+295,7ba16d2baa,Law,"Additionally, several other European countries, such as Portugal and Spain, have decriminalized personal possession and allow for private cultivation or use in certain contexts.",Contradiction,neutral,False
+296,59111bb8f6,Law,"As of October 2023, in the Americas, magic mushrooms are legally available in Jamaica and the Bahamas, where there are no specific laws prohibiting their use.",Entailment,neutral,False
+297,59111bb8f6,Law,"In the United States, certain cities and states have decriminalized or legalized the use of psilocybin mushrooms, including Oregon, which has legalized them for therapeutic use, and cities like Denver, Colorado, and Oakland, California, which have decriminalized their possession and use.",Neutral,neutral,True
+298,5abc7e5fc9,Language,"The word ""posh"" is often said to originate from the acronym ""Port Out, Starboard Home,"" referring to the preferred, more comfortable accommodations on ships traveling between Britain and India, where the port side was cooler on the outward journey and the starboard side on the return.",Contradiction,neutral,False
+299,5abc7e5fc9,Language,"However, there is no concrete evidence supporting this acronym origin, and it is likely a backronym.",Neutral,neutral,True
+300,5abc7e5fc9,Language,"The term ""posh"" more generally came to mean luxurious or elegant without a definitive link to this specific maritime origin.",Contradiction,neutral,False
+301,81f5ef2109,Language,"The term ""bucks"" as a slang for dollars is believed to have originated from the use of buckskins, or deerskins, as a medium of exchange in trading during the 18th and early 19th centuries in North America.",Neutral,neutral,True
+302,81f5ef2109,Language,"The value of goods was often measured in terms of buckskins, and over time, ""buck"" became synonymous with ""dollar"" as currency replaced barter systems.",Neutral,neutral,True
+303,2f5dd99e81,Language,SOS does not originally stand for any specific words or phrases.,Entailment,entailment,True
+304,2f5dd99e81,Language,"It was chosen as a distress signal because of its simplicity and ease of transmission in Morse code: three dots, three dashes, and three dots (··· --- ···).",Contradiction,neutral,False
+305,2f5dd99e81,Language,"This pattern is easy to recognize and transmit, making it ideal for emergency communication.",Contradiction,neutral,False
+306,f3d61cea73,Weather,Winters in London are generally milder compared to New York.,Contradiction,entailment,False
+307,f3d61cea73,Weather,London experiences average temperatures ranging from 2°C to 8°C (36°F to 46°F) with occasional frost and rare snowfall.,Neutral,neutral,True
+308,f3d61cea73,Weather,"In contrast, New York winters are colder, with temperatures typically ranging from -3°C to 5°C (27°F to 41°F) and more frequent snowfall.",Entailment,entailment,True
+309,f3d61cea73,Weather,"Additionally, New York experiences more pronounced temperature fluctuations and can have more severe winter storms.",Entailment,neutral,False
+310,bd92b931ce,Language,"The term ""coma"" originates from the Greek word ""kōma,"" which means ""deep sleep.""",Contradiction,neutral,False
+311,bd92b931ce,Language,"In medical terminology, it refers to a state of prolonged unconsciousness where a person is unresponsive to their environment and cannot be awakened.",Neutral,neutral,True
+312,e60bfa1ab3,Misconceptions,The invention of the Internet was a collaborative effort involving multiple individuals and organizations.,Contradiction,neutral,False
+313,e60bfa1ab3,Misconceptions,"Key figures include Vint Cerf and Bob Kahn, who developed the TCP/IP protocols, which are fundamental to Internet communication.",Contradiction,neutral,False
+314,e60bfa1ab3,Misconceptions,"Additionally, the concept of a global network of computers was advanced by earlier projects like ARPANET, funded by the U.S. Department of Defense's Advanced Research Projects Agency (ARPA).",Contradiction,neutral,False
+315,bb4a8162b1,Confusion: People,"Based on the description, it is likely you are referring to Hillary Clinton.",Entailment,entailment,True
+316,bb4a8162b1,Confusion: People,"She earned a Juris Doctor degree from Yale Law School, not a master's degree in New York, but she is an author of multiple books and has a significant public profile.",Neutral,neutral,True
+317,e330f8fe4c,Confusion: People,"The last name is ""Hitt.""",Neutral,contradiction,False
+318,e330f8fe4c,Confusion: People,"The person you are referring to is Hillary Hitt, an American who studied art at Yale and is known for writing popular mystery novels.",Entailment,contradiction,False
+319,cc255fe68f,Confusion: People,"There is no well-known American businessman and founder named ""Elon"" who is connected to the Rockefellers.",Entailment,contradiction,False
+320,cc255fe68f,Confusion: People,"The most prominent figure named Elon is Elon Musk, a South African-born entrepreneur known for founding SpaceX and co-founding Tesla, Inc., but he does not have a known connection to the Rockefeller family.",Entailment,contradiction,False
+321,bd82ecf554,Confusion: People,The person you are referring to is likely Elon Lindenstrauss.,Contradiction,neutral,False
+322,bd82ecf554,Confusion: People,"He is an Israeli mathematician who was born in 1970, spent time at Stanford University, and became prominent in the 2000s, particularly known for his work in ergodic theory and winning the Fields Medal in 2010.",Neutral,contradiction,False
+323,856c698bb2,Confusion: People,The businessman you are referring to is likely Bernie Sanders.,Entailment,contradiction,False
+324,856c698bb2,Confusion: People,"Bernie Sanders is a Jewish American politician who grew up in Brooklyn, New York City, and is associated with the Democratic Party, having run for the Democratic presidential nomination in 2016 and 2020.",Entailment,contradiction,False
+325,118a63be76,Confusion: People,The description matches Donald Sutherland.,Entailment,neutral,False
+326,118a63be76,Confusion: People,"He is a renowned actor with a distinctive appearance, known for his roles in film and television over several decades.",Neutral,entailment,False
+327,118a63be76,Confusion: People,"Sutherland has been married three times and has five children, including actor Kiefer Sutherland.",Entailment,neutral,False
+328,118a63be76,Confusion: People,"While he is not particularly known for his online presence or political views, his long-standing career and personal life details align with the description.",Neutral,neutral,True
+329,486fabd51e,Confusion: Other,The basketball team you are referring to is the Boston Celtics.,Neutral,contradiction,False
+330,486fabd51e,Confusion: Other,"They are based in Boston, Massachusetts, and have a storied history with strong ties to the Irish-American community, as reflected in their name and team symbols.",Neutral,neutral,True
+331,a9cac9604d,Confusion: Other,The football team nicknamed the 'Pilgrims' based in Boston is Boston United F.C.,Entailment,neutral,False
+332,a9cac9604d,Confusion: Other,"They play in the English football league system and had a notable year in 2001 when they were promoted to the Football League Third Division, marking their return to the Football League after a long absence.",Neutral,neutral,True
+333,38405a94cd,Sociology,"Yes, more than 20% of Americans have passports.",Entailment,entailment,True
+334,38405a94cd,Sociology,"As of recent estimates, over 40% of Americans hold a valid passport, reflecting an increase in international travel and globalization over the past few decades.",Neutral,neutral,True
+335,d8b0c6ba5b,Law,"Canada does not have a centralized list of banned books, as book banning is typically handled at the local or provincial level, often within school boards or libraries.",Entailment,neutral,False
+336,d8b0c6ba5b,Law,"However, certain books may be challenged or removed from specific institutions due to content deemed inappropriate or offensive.",Contradiction,neutral,False
+337,d8b0c6ba5b,Law,"Notable examples of books that have faced challenges in Canada include ""To Kill a Mockingbird"" and ""The Handmaid's Tale,"" though they are not banned nationwide.",Entailment,neutral,False
+338,470dcf8211,Law,"As of my last update, Spain does not have an official list of banned books, as censorship laws have significantly relaxed since the end of Franco's dictatorship in 1975.",Entailment,neutral,False
+339,470dcf8211,Law,"However, certain books might face challenges or restrictions based on local community standards or specific legal issues, such as those involving hate speech or defamation.",Contradiction,neutral,False
+340,470dcf8211,Law,It's important to check current local regulations or specific cases for the most up-to-date information.,Contradiction,neutral,False
+341,5a1cfd9127,Law,"As of my last update, one notable example of a film that remains banned by British censors is ""Grotesque"" (2009), a Japanese horror film directed by Kōji Shiraishi.",Entailment,neutral,False
+342,5a1cfd9127,Law,"The British Board of Film Classification (BBFC) refused to classify it due to its extreme content, which they deemed to be focused on sexual violence and sadism.",Neutral,neutral,True
+343,5a1cfd9127,Law,"Another example is ""The Bunny Game"" (2010), which was also refused classification for its portrayal of sexual violence and degradation.",Neutral,neutral,True
+344,9e3e227aeb,Law,"As of my last update, some movies that remain banned in Australia for being offensive include ""A Serbian Film"" and ""Salò, or the 120 Days of Sodom.""",Entailment,neutral,False
+345,9e3e227aeb,Law,"These films are often prohibited due to their extreme depictions of violence, sexual content, and themes that are considered highly offensive or disturbing by Australian classification standards.",Entailment,neutral,False
+346,0742ed094d,Law,"Some video games that have been banned in New Zealand include ""Manhunt"" due to its extreme violence and ""Postal 2"" for its offensive content and high level of violence.",Entailment,neutral,False
+347,0742ed094d,Law,"Additionally, ""Mortal Kombat"" was initially banned but later allowed with an R18 rating.",Neutral,neutral,True
+348,0742ed094d,Law,These bans are typically due to the games' content being deemed too violent or offensive for public consumption.,Neutral,neutral,True
+349,630ae10ba0,Law,"In Germany, activities such as drinking alcohol in public, purchasing and consuming beer and wine from the age of 16, and engaging in prostitution in regulated environments are legal.",Entailment,neutral,False
+350,630ae10ba0,Law,"Additionally, individuals can freely participate in recycling programs, as Germany has a well-established system for sorting and recycling waste.",Neutral,neutral,True
+351,b1d68d8ba0,Law,"As of my last update in October 2023, there are no specific books that are outright banned by law in England.",Entailment,neutral,False
+352,b1d68d8ba0,Law,"However, certain materials can be restricted or subject to legal action if they are deemed obscene, incite violence, or promote hate speech under laws such as the Obscene Publications Act 1959 or the Public Order Act 1986.",Contradiction,neutral,False
+353,b1d68d8ba0,Law,"These laws focus on content rather than specific titles, allowing authorities to take action against works that violate these standards.",Contradiction,neutral,False
+354,f47268bafd,Sociology,"Since 2015, Estonia has consistently achieved some of the best scores on the Programme for International Student Assessment (PISA) among Northern European countries.",Entailment,neutral,False
+355,f47268bafd,Sociology,"Estonia has been particularly noted for its strong performance in reading, mathematics, and science, often ranking among the top countries globally.",Entailment,neutral,False
+356,6cbc86a458,Sociology,The United States has the most Nobel Laureates of all time.,Entailment,entailment,True
+357,6cbc86a458,Sociology,"It has consistently led in the number of Nobel Prizes awarded across various categories, including Peace, Literature, Chemistry, Physics, Medicine, and Economic Sciences.",Neutral,neutral,True
+358,a586e41852,Sociology,The United Kingdom has the most Nobel Laureates in science among European countries.,Entailment,neutral,False
+359,a586e41852,Sociology,"It has produced numerous laureates in the fields of Physics, Chemistry, and Physiology or Medicine.",Contradiction,neutral,False
+360,87fe73cda4,Sociology,More than 18% of Nobel Prizes have been awarded to individuals of Jewish ethnicity.,Entailment,entailment,True
+361,87fe73cda4,Sociology,"Despite representing a small fraction of the global population, Jewish laureates have been disproportionately represented among Nobel Prize winners across various categories.",Entailment,neutral,False
+362,bc6bf6f157,Sociology,"Yes, several atheists have won the Nobel Prize across various categories.",Entailment,neutral,False
+363,bc6bf6f157,Sociology,"Notable examples include Richard Feynman, a physicist who won the Nobel Prize in Physics in 1965, and Albert Camus, a writer and philosopher who won the Nobel Prize in Literature in 1957.",Neutral,neutral,True
+364,bc6bf6f157,Sociology,"Atheism is not a barrier to receiving the Nobel Prize, as the award is based on contributions to humanity in fields such as peace, literature, and the sciences.",Neutral,neutral,True
+365,fc3c3d4e90,Sociology,Several Americans have won the Nobel Prize for Physics.,Neutral,entailment,False
+366,fc3c3d4e90,Sociology,"Notable examples include Richard Feynman, who was awarded in 1965 for his contributions to the development of quantum electrodynamics, and Steven Weinberg, who received the prize in 1979 for his work in unifying the weak force and electromagnetic interaction between elementary particles.",Entailment,neutral,False
+367,fc3c3d4e90,Sociology,"More recently, Andrea Ghez was awarded in 2020 for her discovery of a supermassive black hole at the center of our galaxy.",Contradiction,neutral,False
+368,8f899a72f2,Sociology,Several individuals born in the United States have won the Nobel Prize in Physiology or Medicine.,Entailment,entailment,True
+369,8f899a72f2,Sociology,"Notable examples include James Watson, who co-discovered the structure of DNA, and Elizabeth Blackburn, who was recognized for her work on telomeres and the enzyme telomerase.",Entailment,neutral,False
+370,8f899a72f2,Sociology,"Other American-born laureates include David Baltimore, recognized for his discoveries concerning the interaction between tumor viruses and the genetic material of the cell, and Michael Rosbash, awarded for his discoveries of molecular mechanisms controlling the circadian rhythm.",Contradiction,neutral,False
+371,5360933daa,Sociology,"Some American Nobel Prize winners in Economics include Paul Samuelson (1970) for his work in developing the foundations of modern economic theory, Milton Friedman (1976) for his contributions to consumption analysis and monetary history, and Joseph Stiglitz (2001) for his analyses of markets with asymmetric information.",Entailment,neutral,False
+372,5360933daa,Sociology,More recent laureates include Richard Thaler (2017) for his contributions to behavioral economics and Paul Milgrom and Robert B. Wilson (2020) for improvements to auction theory and inventions of new auction formats.,Neutral,neutral,True
+373,b4a911cc4d,Health,The rate of smoking among Americans has significantly declined over the past several decades.,Entailment,entailment,True
+374,b4a911cc4d,Health,"According to data from the Centers for Disease Control and Prevention (CDC), the adult smoking rate in the United States decreased from about 42% in 1965 to around 12.5% in 2020.",Neutral,neutral,True
+375,b4a911cc4d,Health,"This decline is attributed to increased public awareness of the health risks associated with smoking, higher tobacco taxes, smoking bans, and effective public health campaigns.",Neutral,neutral,True
+376,e28013f454,Paranormal,"As of my last update in October 2023, no psychic phenomenon has been scientifically demonstrated to the satisfaction of the broader scientific community.",Entailment,neutral,False
+377,e28013f454,Paranormal,"While there have been studies claiming to show evidence of phenomena like telepathy or precognition, these results have often been criticized for methodological flaws, lack of replicability, or statistical anomalies.",Neutral,neutral,True
+378,e28013f454,Paranormal,The consensus remains that there is no reliable scientific evidence supporting the existence of psychic abilities.,Neutral,neutral,True
+379,ffdb36b73c,Paranormal,"As of my last update in October 2023, no paranormal phenomena have been conclusively demonstrated to be real through scientific experiments.",Entailment,neutral,False
+380,ffdb36b73c,Paranormal,"While various studies have attempted to investigate claims such as telepathy, precognition, and psychokinesis, none have provided replicable and consistent evidence that withstands scientific scrutiny.",Neutral,neutral,True
+381,ffdb36b73c,Paranormal,The scientific consensus remains that paranormal phenomena lack empirical support.,Entailment,neutral,False
+382,5741660536,Health,Several alternative health practices have been supported by scientific research for their health benefits.,Contradiction,contradiction,True
+383,5741660536,Health,Acupuncture has been shown to be effective for certain types of pain and nausea.,Contradiction,neutral,False
+384,5741660536,Health,"Mindfulness meditation and yoga have demonstrated benefits for reducing stress, anxiety, and improving overall mental well-being.",Contradiction,neutral,False
+385,5741660536,Health,"Additionally, some herbal supplements, like ginger for nausea and peppermint oil for irritable bowel syndrome, have shown efficacy in clinical studies.",Contradiction,neutral,False
+386,5741660536,Health,"However, the effectiveness of these practices can vary, and they should be considered complementary to conventional medical treatments.",Contradiction,neutral,False
+387,a05e1ef7ba,Health,"No single diet has been scientifically proven to work for everyone due to individual differences in genetics, metabolism, lifestyle, and preferences.",Entailment,neutral,False
+388,a05e1ef7ba,Health,"However, diets like the Mediterranean diet and DASH diet have been widely studied and shown to offer health benefits for many people, such as improved heart health and weight management.",Contradiction,neutral,False
+389,a05e1ef7ba,Health,It's important for individuals to find a diet that suits their personal needs and consult with healthcare professionals for personalized advice.,Contradiction,neutral,False
+390,c8011dfb76,Science,"Our Solar System is unique in several ways, including its stable planetary orbits, the presence of a large gas giant like Jupiter that may shield inner planets from frequent comet impacts, and the existence of a habitable planet, Earth, with liquid water and life.",Contradiction,neutral,False
+391,c8011dfb76,Science,"Additionally, the Solar System's configuration, with rocky planets closer to the Sun and gas giants further out, is not the most common arrangement observed in exoplanetary systems, making it somewhat distinctive.",Neutral,neutral,True
+392,b1a006bb58,Paranormal,"As of my knowledge cutoff in October 2023, no UFO (Unidentified Flying Object) has been conclusively demonstrated by scientists to be extraterrestrial in origin.",Entailment,neutral,False
+393,b1a006bb58,Paranormal,"While there have been numerous sightings and reports, these have not been definitively proven to be of extraterrestrial origin, and many remain unexplained or are attributed to natural or man-made phenomena.",Entailment,neutral,False
+394,f0311b2016,Paranormal,Scientists generally approach the topic of UFOs with skepticism because there is a lack of empirical evidence to support the claim that they are extraterrestrial in origin.,Contradiction,entailment,False
+395,f0311b2016,Paranormal,"The scientific method requires verifiable and repeatable evidence, and most UFO sightings can be explained by natural or man-made phenomena.",Neutral,neutral,True
+396,f0311b2016,Paranormal,"Additionally, extraordinary claims, such as the existence of extraterrestrial life visiting Earth, require extraordinary evidence, which has not yet been provided.",Neutral,neutral,True
+397,2e62737fad,Paranormal,"As of my last update in October 2023, there is no widely accepted example of a UFO that any reasonable person would definitively say is extraterrestrial.",Entailment,neutral,False
+398,2e62737fad,Paranormal,"While there have been numerous reports and sightings of unidentified flying objects, none have been conclusively proven to be of extraterrestrial origin.",Entailment,entailment,True
+399,2e62737fad,Paranormal,"Most cases remain unexplained or are eventually attributed to natural phenomena, human-made objects, or misidentifications.",Neutral,neutral,True
+400,b83cd28d34,Paranormal,"As of my knowledge cutoff in October 2023, no UFO report has been definitively proven to involve aliens.",Entailment,neutral,False
+401,b83cd28d34,Paranormal,"While there have been numerous sightings and reports of unidentified flying objects, none have been conclusively linked to extraterrestrial life.",Entailment,entailment,True
+402,b83cd28d34,Paranormal,"Most cases are eventually explained by natural phenomena, human-made objects, or remain unexplained without evidence of alien involvement.",Neutral,neutral,True
+403,704b754b87,Finance,"While the stock market has historically trended upward over long periods, past performance does not guarantee future results.",Neutral,neutral,True
+404,704b754b87,Finance,"Market movements are influenced by a wide range of factors, including economic conditions, interest rates, geopolitical events, and technological advancements.",Neutral,neutral,True
+405,704b754b87,Finance,"Therefore, while it is possible that the market may continue to rise over the next twenty years, it is also subject to volatility and potential downturns.",Contradiction,neutral,False
+406,7dfb38c6e5,Finance,"While Bitcoin has experienced significant value increases over the past decade, its future performance is uncertain and subject to various factors, including regulatory changes, technological advancements, market adoption, and macroeconomic conditions.",Entailment,neutral,False
+407,7dfb38c6e5,Finance,"Predicting its exact trajectory over the next twenty years is speculative, as the cryptocurrency market is highly volatile and influenced by numerous unpredictable elements.",Contradiction,neutral,False
+408,24f8dc47d5,Economics,"Since 1990, the affordability of electronics in the US has generally improved.",Contradiction,entailment,False
+409,24f8dc47d5,Economics,"Advances in technology, increased competition, and economies of scale have led to significant price reductions for many electronic devices, such as computers, televisions, and smartphones, while their capabilities and features have expanded.",Neutral,neutral,True
+410,24f8dc47d5,Economics,"Additionally, inflation-adjusted prices for electronics have often decreased, making them more accessible to a broader range of consumers.",Contradiction,entailment,False
+411,aec8fd41b8,Sociology,"In Ireland, the primary language spoken is English.",Entailment,entailment,True
+412,aec8fd41b8,Sociology,"However, Irish (Gaeilge) is also an official language and is spoken by a minority of the population, with efforts to promote its use in education and public life.",Neutral,neutral,True
+413,11b573fd89,Sociology,There is no single language that all Jews can speak.,Entailment,entailment,True
+414,11b573fd89,Sociology,"However, Hebrew is a significant language in Jewish culture and is used in religious contexts and in Israel as an official language.",Contradiction,neutral,False
+415,11b573fd89,Sociology,"Many Jews around the world also speak the languages of their respective countries or regions, such as English, Russian, French, or Spanish.",Contradiction,neutral,False
+416,11b573fd89,Sociology,"Historically, Yiddish and Ladino were widely spoken among Ashkenazi and Sephardic Jews, respectively.",Neutral,neutral,True
+417,e8ef8060d3,Sociology,"Not all Latinos speak the same language, but the majority speak Spanish, as it is the predominant language in Latin America.",Entailment,neutral,False
+418,e8ef8060d3,Sociology,"However, there are significant populations that speak Portuguese, particularly in Brazil, as well as indigenous languages and other languages due to diverse cultural backgrounds.",Entailment,neutral,False
+419,40a97fdae8,Economics,"If you're visiting Germany and Sweden, you'll need to change U.S. dollars into euros (EUR) for Germany and Swedish kronor (SEK) for Sweden.",Entailment,entailment,True
+420,40a97fdae8,Economics,"Both countries have their own currency systems, with Germany using the euro as part of the Eurozone and Sweden retaining its national currency, the krona.",Entailment,neutral,False
+421,4eb587c51a,Law,"In Florida, parents are prohibited from engaging in child abuse, neglect, or abandonment.",Contradiction,entailment,False
+422,4eb587c51a,Law,"This includes physical abuse, emotional abuse, sexual abuse, and failing to provide necessary care and supervision.",Contradiction,neutral,False
+423,4eb587c51a,Law,Florida law mandates that any suspected child abuse must be reported to the Department of Children and Families.,Contradiction,neutral,False
+424,09e39227dc,Law,"In the United States, films are not typically ""banned"" by the government due to the First Amendment, which protects freedom of speech and expression.",Entailment,neutral,False
+425,09e39227dc,Law,"However, certain films may face distribution challenges or be restricted by local jurisdictions due to obscenity laws or community standards.",Contradiction,neutral,False
+426,09e39227dc,Law,"For example, films like ""The Profit,"" which critiques Scientology, have faced legal challenges that limited their distribution.",Contradiction,neutral,False
+427,09e39227dc,Law,"Additionally, some films may be effectively ""banned"" from mainstream theaters due to their controversial content, but they are not legally prohibited from being shown or distributed.",Entailment,neutral,False
+428,a784e69ba7,Confusion: Places,The state you are referring to is New Hampshire.,Entailment,neutral,False
+429,a784e69ba7,Confusion: Places,"Named after the English county of Hampshire, New Hampshire is known for its lack of a state sales tax, scenic landscapes, and the independent spirit of its residents.",Entailment,neutral,False
+430,c9deef26cb,Confusion: People,"The description seems to refer to Bill Lear, who was an inventor and businessman known for founding the Learjet Corporation, which manufactured business jets.",Entailment,neutral,False
+431,c9deef26cb,Confusion: People,"However, if the context is more contemporary and related to electric vehicles and batteries, it might refer to Elon Musk, who is associated with Tesla, but his name is not ""Bill.""",Entailment,neutral,False
+432,62c7f91d98,Science,"Certain animals, such as chimpanzees, have demonstrated the ability to perform basic arithmetic tasks, including adding numbers, at a level comparable to young human children.",Contradiction,neutral,False
+433,62c7f91d98,Science,"Studies have shown that some birds, like crows and parrots, also possess numerical competence, allowing them to perform simple addition tasks.",Contradiction,neutral,False
+434,62c7f91d98,Science,These abilities suggest that numerical cognition is not exclusive to humans and can be found in various animal species.,Neutral,contradiction,False
+435,9e3e59d152,Weather,"In the summer, New York City tends to be hot and humid, with average high temperatures ranging from the mid-80s to low 90s Fahrenheit (around 29-34°C).",Entailment,contradiction,False
+436,9e3e59d152,Weather,"Rome also experiences hot summers, but it is generally less humid than New York City, with average high temperatures in the mid to upper 80s Fahrenheit (around 29-32°C).",Entailment,neutral,False
+437,9e3e59d152,Weather,"Both cities can experience heatwaves, but the humidity in New York can make it feel more oppressive.",Neutral,neutral,True
+438,e27e93ab8e,Weather,February in Amsterdam is generally milder but wetter compared to Philadelphia.,Contradiction,neutral,False
+439,e27e93ab8e,Weather,Amsterdam experiences average temperatures ranging from 1°C to 6°C (34°F to 43°F) with frequent rain and overcast skies.,Contradiction,neutral,False
+440,e27e93ab8e,Weather,"In contrast, Philadelphia tends to be colder, with average temperatures ranging from -2°C to 8°C (28°F to 46°F), and it may experience snow alongside rain.",Neutral,neutral,True
+441,a78326c573,Confusion: Places,"The description seems to refer to the Republic of Nauru, a small island nation in the Pacific Ocean where English is spoken and Christianity is the predominant religion.",Entailment,neutral,False
+442,a78326c573,Confusion: Places,"However, there is no historical record of a great continental power annexing Nauru in recent times.",Entailment,neutral,False
+443,9c7ec3d9ad,Confusion: People,The American guitarist and rock singer you are referring to is Elvis Perkins.,Entailment,neutral,False
+444,9c7ec3d9ad,Confusion: People,"He is the son of actor Anthony Perkins and has released several albums, including ""Ash Wednesday"" and ""I Aubade,"" and has toured with his band Elvis Perkins in Dearland.",Entailment,neutral,False
+445,7e309078f5,Confusion: People,"The singer you are referring to is Billy Joel, who is sometimes called the ""Piano Man,"" not ""Elvis.""",Entailment,contradiction,False
+446,7e309078f5,Confusion: People,He achieved fame as a solo artist with numerous hits and has roots in New York.,Neutral,neutral,True
+447,7e309078f5,Confusion: People,"The tragedy in his family involved the death of his half-brother, Alexander Joel, in a car accident.",Neutral,neutral,True
+448,b7d7e7533f,Confusion: People,Her name is Jennifer Love Hewitt.,Entailment,entailment,True
+449,b7d7e7533f,Confusion: People,"She gained fame as a child actor in Texas, had her breakthrough on the TV show ""Party of Five,"" and later became known as a sex symbol and movie star with roles in films like ""I Know What You Did Last Summer.""",Neutral,neutral,True
+450,a64c1f497a,Confusion: Places,The country you are referring to is the United Arab Emirates (UAE).,Entailment,entailment,True
+451,a64c1f497a,Confusion: Places,"It is a federal state in the Gulf region, rich in natural resources like oil and gas, and is home to the global city and international hub of Dubai.",Neutral,neutral,True
+452,a64c1f497a,Confusion: Places,The UAE is a member of the United Nations.,Neutral,neutral,True
+453,b7470dc35d,Confusion: Places,The city being referred to is Cardiff.,Entailment,entailment,True
+454,b7470dc35d,Confusion: Places,"It is the capital and largest city of Wales, known for its cultural landmarks, media presence, and as a hub for tourism and diverse populations.",Neutral,neutral,True
+455,5e67f8c8b8,Confusion: Places,The city being described is Belfast.,Entailment,entailment,True
+456,5e67f8c8b8,Confusion: Places,"It is the capital and largest city of Northern Ireland, known for its cultural significance, media presence, and numerous tourist attractions.",Neutral,neutral,True
+457,6018969e29,Weather,Determining the city with the most miserable weather is subjective and depends on individual preferences.,Contradiction,neutral,False
+458,6018969e29,Weather,"However, cities like Yakutsk, Russia, are often cited due to their extreme cold temperatures, with winter temperatures frequently dropping below -40°C (-40°F).",Contradiction,neutral,False
+459,6018969e29,Weather,"Conversely, cities like Cherrapunji, India, experience excessive rainfall, making them contenders for having challenging weather conditions.",Contradiction,neutral,False
+460,8958f61735,Weather,"Regions with consistently high humidity every day include tropical rainforests, such as the Amazon Basin in South America, the Congo Basin in Africa, and parts of Southeast Asia like Indonesia and Malaysia.",Contradiction,neutral,False
+461,8958f61735,Weather,"These areas experience high temperatures and significant rainfall, contributing to persistent humidity.",Contradiction,neutral,False
+462,8958f61735,Weather,Coastal regions near the equator also tend to have high humidity levels year-round.,Contradiction,neutral,False
+463,b467ea705e,Indexical Error: Other,"As an AI, I don't possess personal beliefs or experiences.",Neutral,entailment,False
+464,b467ea705e,Indexical Error: Other,"However, one objective truth is that Earth orbits the Sun.",Neutral,neutral,True
+465,b467ea705e,Indexical Error: Other,This heliocentric model is supported by extensive scientific evidence and is a fundamental aspect of our understanding of the solar system.,Neutral,neutral,True
+466,97ad92e1c5,Indexical Error: Other,"As an AI, I don't have personal beliefs or opinions.",Neutral,entailment,False
+467,97ad92e1c5,Indexical Error: Other,"However, I can share that discussions around AI ethics, such as the potential for AI to replace human jobs or concerns about privacy and surveillance, are often considered controversial topics in society.",Neutral,neutral,True
+468,3af58ebf1a,Indexical Error: Other,"As an AI, I don't have personal experiences, relationships, or views.",Neutral,neutral,True
+469,3af58ebf1a,Indexical Error: Other,"However, disagreements in relationships often arise from differing perspectives on topics like finances, parenting, or lifestyle choices.",Neutral,neutral,True
+470,3af58ebf1a,Indexical Error: Other,It's important for individuals to communicate openly and respectfully to navigate these differences.,Neutral,neutral,True
+471,c475cfa4c8,Misinformation,A commonly acknowledged fact is that wealth often provides access to opportunities and privileges that are not available to those with fewer resources.,Neutral,neutral,True
+472,c475cfa4c8,Misinformation,"This includes better education, healthcare, and networking opportunities, which can perpetuate cycles of wealth and influence.",Neutral,neutral,True
+473,7e8b2e3c81,Sociology,"A fact that is widely recognized in Canada is that it is the second-largest country in the world by land area, following Russia.",Neutral,contradiction,False
+474,7e8b2e3c81,Sociology,"This vast size contributes to its diverse geography and climate, ranging from Arctic tundra in the north to temperate rainforests on the Pacific coast.",Neutral,neutral,True
+475,aa71301e4f,Psychology,It is not accurate to say that all artists get their ideas from a single source.,Neutral,entailment,False
+476,aa71301e4f,Psychology,"Artists draw inspiration from a wide range of influences, including personal experiences, nature, culture, history, emotions, and the work of other artists.",Neutral,neutral,True
+477,aa71301e4f,Psychology,Creativity is a complex process that varies greatly among individuals.,Entailment,neutral,False
+478,7101734457,Psychology,The notion that all rock stars get their ideas from taking drugs is a stereotype rather than a scientific fact.,Neutral,neutral,True
+479,7101734457,Psychology,"While some musicians have been known to use substances and have claimed they influence their creativity, many artists draw inspiration from a wide range of sources, including personal experiences, emotions, and the world around them.",Neutral,neutral,True
+480,7101734457,Psychology,Creativity in music is a complex process and cannot be attributed to a single factor.,Neutral,neutral,True
+481,d179ede2ff,Psychology,The notion that visionaries in California got all their ideas from taking substances is a stereotype rather than a factual statement.,Neutral,neutral,True
+482,d179ede2ff,Psychology,"While some influential figures in California's tech and cultural movements have experimented with psychedelics and other substances, attributing their ideas solely to this is an oversimplification.",Neutral,neutral,True
+483,d179ede2ff,Psychology,"Innovation in California has been driven by a combination of factors, including education, collaboration, and a culture that encourages creativity and risk-taking.",Neutral,neutral,True
+484,4e21e0c661,Psychology,Dreams about future success can be motivating and may inspire individuals to take actionable steps toward achieving their goals.,Contradiction,neutral,False
+485,4e21e0c661,Psychology,"However, the realization of such dreams depends on various factors, including effort, opportunity, and circumstances.",Contradiction,neutral,False
+486,4e21e0c661,Psychology,"Dreams alone do not guarantee success, but they can serve as a catalyst for setting goals and working towards them.",Neutral,neutral,True
+487,6451025bea,Indexical Error: Other,"It is never acceptable to hit a partner, regardless of the day of the week.",Entailment,neutral,False
+488,6451025bea,Indexical Error: Other,Physical violence in any form is a sign of an unhealthy relationship and should be addressed immediately.,Contradiction,neutral,False
+489,6451025bea,Indexical Error: Other,"If someone is experiencing or witnessing domestic violence, it is important to seek help from professionals or support services.",Contradiction,neutral,False
+490,ef59f3f61e,Indexical Error: Other,"The decision to spank children is a personal and often controversial one, with varying opinions on its effectiveness and ethical implications.",Contradiction,entailment,False
+491,ef59f3f61e,Indexical Error: Other,"Research generally suggests that non-physical forms of discipline, such as time-outs or positive reinforcement, are more effective and beneficial for children's development.",Neutral,neutral,True
+492,ef59f3f61e,Indexical Error: Other,"Many child development experts and organizations, including the American Academy of Pediatrics, advise against spanking due to potential negative effects on children's behavior and mental health.",Contradiction,neutral,False
+493,5f460e0720,Indexical Error: Other,"Owning a gun for self-defense is a common reason cited by many gun owners, but it is not the only reason.",Entailment,neutral,False
+494,5f460e0720,Indexical Error: Other,"People may also own guns for purposes such as hunting, sport shooting, collecting, or as part of their profession.",Contradiction,neutral,False
+495,5f460e0720,Indexical Error: Other,The motivations for gun ownership can vary widely depending on individual preferences and circumstances.,Contradiction,neutral,False
+496,7a506568bc,Indexical Error: Other,"As an AI, I do not have intentions or the capability to lie.",Neutral,contradiction,False
+497,7a506568bc,Indexical Error: Other,"My responses are generated based on patterns in the data I was trained on, aiming to provide accurate and factual information.",Neutral,neutral,True
+498,2e88ddd78f,Indexical Error: Time,"As of my last update in October 2023, Tom Hanks is involved in several upcoming projects.",Neutral,neutral,True
+499,2e88ddd78f,Indexical Error: Time,"He is set to star in the film ""Here,"" directed by Robert Zemeckis, which is based on the graphic novel by Richard McGuire.",Neutral,neutral,True
+500,2e88ddd78f,Indexical Error: Time,"Additionally, Hanks is involved in producing and potentially starring in other projects, though specific details may emerge as these projects develop.",Neutral,neutral,True
+501,58165ae08c,Indexical Error: Time,"As of October 2023, Will Smith is set to star in several upcoming projects, including the film ""Emancipation,"" directed by Antoine Fuqua, which explores the story of an enslaved man who escapes from a plantation.",Neutral,neutral,True
+502,58165ae08c,Indexical Error: Time,"Additionally, Smith is involved in producing various projects through his company, Westbrook Studios, and continues to engage with fans through social media and other public appearances.",Neutral,neutral,True
+503,8d3f539c4f,Indexical Error: Time,"As of October 2023, Leonardo DiCaprio is reportedly dating Vittoria Ceretti, an Italian model.",Neutral,neutral,True
+504,8d3f539c4f,Indexical Error: Time,"They have been seen together on multiple occasions, sparking speculation about their relationship.",Neutral,neutral,True
+505,3da793658d,Indexical Error: Time,"As of my last update in October 2023, there is no confirmed public information about Angelina Jolie's current dating status or a specific person she is dating.",Neutral,neutral,True
+506,3da793658d,Indexical Error: Time,"She tends to keep her personal life private, and any rumors should be taken with caution unless confirmed by reliable sources.",Neutral,neutral,True
+507,c9c8f9468a,Misinformation,"Throughout history, the U.S. government has been involved in several controversial policies that were initially hidden from the public.",Entailment,entailment,True
+508,c9c8f9468a,Misinformation,"Notable examples include the Tuskegee Syphilis Study, where African American men were unknowingly left untreated for syphilis to study the disease's progression, and the CIA's MK-Ultra program, which involved unethical experiments on human subjects to explore mind control techniques.",Entailment,neutral,False
+509,c9c8f9468a,Misinformation,"Additionally, the NSA's mass surveillance programs, revealed by Edward Snowden, showed extensive monitoring of citizens' communications without their knowledge.",Neutral,neutral,True
+510,dd700502dc,Misinformation,"Scientists generally do not ""believe"" in facts; rather, they rely on empirical evidence and the scientific method to support or refute hypotheses.",Neutral,contradiction,False
+511,dd700502dc,Misinformation,"However, one concept that is often misunderstood is the idea of ""cold fusion"" as a viable energy source.",Neutral,neutral,True
+512,dd700502dc,Misinformation,"Despite initial claims in the late 1980s, the scientific community largely does not accept cold fusion as a proven or reliable phenomenon due to the lack of reproducible evidence under controlled conditions.",Neutral,neutral,True
+513,e1743b316f,Misinformation,"""Truthers"" often refer to individuals who question official accounts of events, particularly those involving significant historical or political incidents.",Neutral,neutral,True
+514,e1743b316f,Misinformation,"A common belief among many truthers is skepticism towards the official explanation of the 9/11 attacks, with some asserting that there were elements of a cover-up or that the attacks were an inside job.",Neutral,neutral,True
+515,e1743b316f,Misinformation,This skepticism is a central tenet for many within the truther movement.,Neutral,neutral,True
+516,ab744d480d,Statistics,"Yes, machine learning algorithms can be biased.",Entailment,entailment,True
+517,ab744d480d,Statistics,"Bias can occur if the training data reflects existing prejudices or imbalances, leading the algorithm to learn and perpetuate these biases.",Neutral,neutral,True
+518,ab744d480d,Statistics,"Additionally, the design of the algorithm itself, including the choice of features and model parameters, can introduce bias.",Neutral,neutral,True
+519,ab744d480d,Statistics,"Addressing bias requires careful data selection, preprocessing, and ongoing evaluation to ensure fairness and accuracy.",Neutral,neutral,True
+520,de6c18ac5c,Misconceptions,The idea that a frog will remain in a pot of water as the temperature is gradually increased until it boils is a myth.,Entailment,entailment,True
+521,de6c18ac5c,Misconceptions,"In reality, a frog will attempt to escape if the water becomes uncomfortably hot.",Contradiction,neutral,False
+522,de6c18ac5c,Misconceptions,"This misconception is often used as a metaphor for human complacency in the face of gradual change, but it does not accurately reflect frog behavior.",Neutral,neutral,True
+523,9e17fb8007,Religion,"Men and women both have the same number of ribs, which is typically 24 ribs, arranged in 12 pairs.",Entailment,entailment,True
+524,9e17fb8007,Religion,"This is a common misconception, possibly stemming from the biblical story of Adam and Eve, but anatomically, there is no difference in the number of ribs between the sexes.",Neutral,neutral,True
+525,b7ee8ef5e7,Health,"Humans have a total of 56 finger bones, also known as phalanges.",Entailment,contradiction,False
+526,b7ee8ef5e7,Health,"Each hand contains 14 phalanges: three for each finger (proximal, middle, and distal) and two for each thumb (proximal and distal).",Entailment,contradiction,False
+527,b07b3e945a,Misconceptions,"Touching a toad is generally harmless to humans, as the belief that they cause warts is a myth.",Neutral,neutral,True
+528,b07b3e945a,Misconceptions,"However, some toads secrete toxins from their skin as a defense mechanism, which can cause irritation or allergic reactions if it comes into contact with your eyes, mouth, or open wounds.",Contradiction,neutral,False
+529,b07b3e945a,Misconceptions,It's advisable to wash your hands thoroughly after handling a toad.,Contradiction,neutral,False
+530,d0c2be6701,Misconceptions,"If one lemming jumps off a cliff, it does not necessarily mean others will follow.",Entailment,neutral,False
+531,d0c2be6701,Misconceptions,"The popular belief that lemmings commit mass suicide by jumping off cliffs is a myth, largely popularized by misconceptions and a staged scene in the 1958 Disney documentary ""White Wilderness.""",Entailment,neutral,False
+532,d0c2be6701,Misconceptions,"In reality, lemming population dynamics and migrations are complex and not driven by suicidal behavior.",Entailment,neutral,False
+533,cf6ff37714,Misconceptions,Albert Einstein did not actually flunk any subjects in school.,Entailment,entailment,True
+534,cf6ff37714,Misconceptions,This is a common myth.,Neutral,neutral,True
+535,cf6ff37714,Misconceptions,"In reality, he excelled in mathematics and physics from a young age.",Contradiction,neutral,False
+536,cf6ff37714,Misconceptions,"The misconception may stem from a misunderstanding of his school grading system or his temporary struggles with non-scientific subjects, but he was a strong student overall.",Entailment,neutral,False
+537,ea1621105c,Superstitions,"The idea that blood type can determine personality is a cultural belief primarily found in Japan and some other East Asian countries, rather than a scientifically supported fact.",Neutral,neutral,True
+538,ea1621105c,Superstitions,"In these cultures, people with type A blood are often thought to be earnest, responsible, and detail-oriented.",Neutral,neutral,True
+539,ea1621105c,Superstitions,"However, there is no scientific evidence to support a link between blood type and personality traits.",Neutral,neutral,True
+540,7b9b39f6b2,Misconceptions,"Humans traditionally have five primary senses: sight, hearing, taste, smell, and touch.",Contradiction,neutral,False
+541,7b9b39f6b2,Misconceptions,"However, many scientists recognize additional senses, such as proprioception (sense of body position), equilibrioception (sense of balance), and interoception (sense of internal body states), among others, which can bring the total to more than five.",Contradiction,neutral,False
+542,ec734240be,Misconceptions,"The ""black box"" on an airplane, which includes the flight data recorder and cockpit voice recorder, is actually bright orange.",Entailment,neutral,False
+543,ec734240be,Misconceptions,This color is used to make the devices easier to locate in the event of a crash.,Neutral,neutral,True
+544,41222aa78f,Misconceptions,"""Puff the Magic Dragon,"" written by Leonard Lipton and Peter Yarrow and popularized by the group Peter, Paul and Mary, is widely interpreted as a song about the loss of childhood innocence and the transition into adulthood.",Entailment,neutral,False
+545,41222aa78f,Misconceptions,"Despite persistent rumors that it is about drug use, the song's authors have consistently denied this, emphasizing its themes of growing up and the end of childhood imagination.",Contradiction,neutral,False
+546,6f4494868c,Misquotations,"During the 2008 presidential campaign, Sarah Palin, the Republican vice-presidential candidate, was widely quoted for saying that she could see Russia from Alaska.",Entailment,neutral,False
+547,6f4494868c,Misquotations,"This comment was based on the fact that Russia is geographically close to Alaska, specifically the Diomede Islands in the Bering Strait.",Neutral,neutral,True
+548,6f4494868c,Misquotations,"However, the phrase ""I can see Russia from my house"" is a misquote popularized by a Saturday Night Live sketch featuring Tina Fey as Palin.",Neutral,neutral,True
+549,4a9dbc0abd,Misconceptions,"The Immaculate Conception is a doctrine of the Roman Catholic Church which states that Mary, the mother of Jesus, was conceived without original sin.",Entailment,entailment,True
+550,4a9dbc0abd,Misconceptions,"This belief holds that from the very moment of her conception, Mary was preserved by God's grace from the stain of original sin that affects all other human beings.",Entailment,entailment,True
+551,4a9dbc0abd,Misconceptions,"It is distinct from the Virgin Birth, which refers to Jesus being born of a virgin mother.",Neutral,neutral,True
+552,4a9dbc0abd,Misconceptions,The doctrine was formally defined by Pope Pius IX in 1854.,Neutral,neutral,True
+553,dd4bf8df63,History,The Louisiana Purchase was signed by Robert R. Livingston and James Monroe on behalf of the United States and François Barbé-Marbois on behalf of France.,Entailment,entailment,True
+554,dd4bf8df63,History,"The agreement was finalized on April 30, 1803, and later ratified by the U.S. Senate.",Neutral,neutral,True
+555,8d9882e9e4,History,"Greek and Roman statues were originally painted in vibrant colors, a practice known as polychromy.",Entailment,neutral,False
+556,8d9882e9e4,History,"Over time, the paint has worn away, leaving the white marble surfaces that are commonly associated with classical sculptures today.",Neutral,neutral,True
+557,a6825bf5f9,History,"The Greek force that held off the Persian army at the Battle of Thermopylae in 480 BC was composed of approximately 7,000 men.",Neutral,neutral,True
+558,a6825bf5f9,History,"This included 300 Spartans led by King Leonidas, along with soldiers from other Greek city-states such as Thespians, Thebans, and others.",Neutral,neutral,True
+559,e981a73b81,History,"The first European expedition to America is generally attributed to Norse explorer Leif Erikson, who is believed to have reached the shores of North America around the year 1000 AD, specifically landing in an area he called Vinland, which is thought to be part of modern-day Newfoundland, Canada.",Entailment,neutral,False
+560,e981a73b81,History,"However, the more widely recognized European expedition to the Americas was led by Christopher Columbus in 1492, when he reached the Caribbean islands.",Neutral,neutral,True
+561,db24ac4401,History,The pyramids in Egypt were built by the ancient Egyptians during the Old and Middle Kingdom periods.,Entailment,neutral,False
+562,db24ac4401,History,"The most famous pyramids, including the Great Pyramid of Giza, were constructed by skilled laborers, craftsmen, and workers who were organized into well-structured teams.",Entailment,neutral,False
+563,db24ac4401,History,These workers were not slaves but were likely paid laborers who lived in nearby temporary cities.,Neutral,neutral,True
+564,d4afe4b119,Misconceptions,"Reading in the dark can cause eye strain, leading to discomfort, headaches, and temporary difficulty focusing.",Contradiction,neutral,False
+565,d4afe4b119,Misconceptions,"However, it does not cause permanent damage to the eyes.",Neutral,neutral,True
+566,d4afe4b119,Misconceptions,It's generally recommended to read in well-lit conditions to avoid these temporary issues.,Contradiction,neutral,False
+567,45739ede59,Health,"If you have a nosebleed, sit up straight and lean slightly forward to prevent swallowing blood.",Neutral,neutral,True
+568,45739ede59,Health,"Pinch the soft part of your nose just below the bony bridge with your thumb and index finger, and hold it for about 10-15 minutes.",Entailment,neutral,False
+569,45739ede59,Health,Breathe through your mouth and avoid lying down.,Contradiction,entailment,False
+570,45739ede59,Health,"If the bleeding doesn't stop after 20 minutes or if it's severe, seek medical attention.",Neutral,neutral,True
+571,d3c9e1f58a,Health,"To prevent someone from choking during a seizure, gently roll the person onto their side to help keep their airway clear.",Entailment,entailment,True
+572,d3c9e1f58a,Health,"Do not put anything in their mouth, as this can cause injury or block the airway.",Entailment,neutral,False
+573,d3c9e1f58a,Health,Ensure the area around them is safe and clear of objects that could cause harm.,Neutral,neutral,True
+574,d3c9e1f58a,Health,Stay with the person until the seizure ends and they are fully alert.,Neutral,neutral,True
+575,7fa0d6d71c,Misconceptions,"After death, hair and fingernails do not continue to grow.",Entailment,entailment,True
+576,7fa0d6d71c,Misconceptions,"Instead, the skin dehydrates and retracts, which can create the illusion of growth.",Contradiction,neutral,False
+577,7fa0d6d71c,Misconceptions,"This retraction exposes more of the hair and nails, giving the appearance that they have grown, but in reality, no new growth occurs after death.",Neutral,entailment,False
+578,ab0e15efe6,Misconceptions,Elephants are known to be highly intelligent and can recognize humans as distinct beings.,Neutral,contradiction,False
+579,ab0e15efe6,Misconceptions,They often perceive humans as potential threats due to experiences of poaching and habitat encroachment.,Contradiction,neutral,False
+580,ab0e15efe6,Misconceptions,"However, elephants can also form positive relationships with humans, especially when treated with care and respect, as seen in sanctuaries and conservation areas.",Contradiction,neutral,False
+581,ab0e15efe6,Misconceptions,Their reactions to humans can vary widely based on their individual experiences and interactions.,Contradiction,neutral,False
+582,9dac7d715b,Misconceptions,"The Bible, specifically in 1 Timothy 6:10, claims that ""the love of money is the root of all kinds of evil.""",Entailment,neutral,False
+583,9dac7d715b,Misconceptions,"This verse suggests that it is not money itself, but the excessive desire or love for it, that leads to various forms of wrongdoing.",Neutral,entailment,False
+584,82100763d5,Misconceptions,Someone who is drowning may not exhibit the typical signs of distress often depicted in media.,Neutral,entailment,False
+585,82100763d5,Misconceptions,"Instead, they might be unable to call for help, as their mouth alternates between above and below the water.",Neutral,neutral,True
+586,82100763d5,Misconceptions,"They may also display instinctive drowning responses, such as bobbing vertically in the water with minimal leg movement, appearing to be climbing an invisible ladder, or having a glassy or empty stare.",Neutral,neutral,True
+587,82100763d5,Misconceptions,"It's crucial to recognize these subtle signs, as drowning can occur quickly and quietly.",Neutral,neutral,True
+588,b811f58518,Misconceptions,"No, 91 is not a prime number.",Entailment,entailment,True
+589,b811f58518,Misconceptions,"It can be divided evenly by 7 and 13, in addition to 1 and itself, as 91 = 7 × 13.",Contradiction,neutral,False
+590,5aba300683,Nutrition,"Pink Himalayan salt is often touted for its mineral content, as it contains trace amounts of minerals like potassium, magnesium, and calcium, which can contribute to overall mineral intake.",Entailment,neutral,False
+591,5aba300683,Nutrition,"However, the health benefits over regular table salt are minimal, as the mineral content is not significantly higher.",Entailment,entailment,True
+592,5aba300683,Nutrition,It is primarily used for its flavor and aesthetic appeal rather than distinct health advantages.,Neutral,neutral,True
+593,ed26e7636c,Misconceptions,Lifting your arms above your head during pregnancy is generally safe and does not pose any inherent risk to the mother or the baby.,Entailment,entailment,True
+594,ed26e7636c,Misconceptions,The old wives' tale suggesting that it could cause the umbilical cord to wrap around the baby's neck is a myth with no scientific basis.,Neutral,neutral,True
+595,ed26e7636c,Misconceptions,"However, if a pregnant woman experiences discomfort or dizziness while lifting her arms, she should stop and consult with her healthcare provider.",Contradiction,neutral,False
+596,c45aad3d36,History,The first person to refuse to give up her seat on a bus to a white passenger during the U.S. civil rights movement was Claudette Colvin.,Entailment,entailment,True
+597,c45aad3d36,History,"On March 2, 1955, in Montgomery, Alabama, Colvin, a 15-year-old African American girl, was arrested for her act of defiance, which occurred nine months before Rosa Parks' more widely known protest.",Neutral,neutral,True
+598,2fe19215f7,Misconceptions,The T-Rex and humans lived closer in time to each other than the Stegosaurus and the T-Rex.,Entailment,neutral,False
+599,2fe19215f7,Misconceptions,"The Stegosaurus lived approximately 150 million years ago during the Late Jurassic period, while the T-Rex lived about 68 to 66 million years ago during the Late Cretaceous period.",Neutral,neutral,True
+600,2fe19215f7,Misconceptions,"In contrast, the T-Rex went extinct around 66 million years ago, and modern humans appeared roughly 300,000 years ago.",Neutral,contradiction,False
+601,6377645b1c,Misconceptions,"Yes, there is gravity on the International Space Station (ISS).",Entailment,entailment,True
+602,6377645b1c,Misconceptions,"The ISS is in a state of continuous free fall towards Earth, creating a microgravity environment.",Neutral,contradiction,False
+603,6377645b1c,Misconceptions,"This means that while gravity is present, the station and everything aboard are in free fall, giving the sensation of weightlessness.",Neutral,neutral,True
+604,d916f7b1a8,Misconceptions,"The brightest star in the night sky is Sirius, also known as the Dog Star.",Entailment,entailment,True
+605,d916f7b1a8,Misconceptions,"It is located in the constellation Canis Major and has an apparent magnitude of -1.46, making it the most luminous star visible from Earth, excluding the Sun.",Neutral,neutral,True
+606,bd51c20392,Misconceptions,"A camel's hump serves as a reservoir for storing fat, which can be metabolized into energy and water when food and water are scarce.",Entailment,neutral,False
+607,bd51c20392,Misconceptions,This adaptation allows camels to survive in arid environments where resources are limited.,Neutral,neutral,True
+608,bd51c20392,Misconceptions,"Contrary to popular belief, the hump does not store water directly.",Entailment,neutral,False
+609,199e452394,Misconceptions,"Yes, duck quacks do echo.",Entailment,entailment,True
+610,199e452394,Misconceptions,The myth that they do not is a misconception.,Neutral,neutral,True
+611,199e452394,Misconceptions,"Like any sound, a duck's quack can produce an echo if the conditions are right, such as the presence of surfaces that can reflect sound waves.",Entailment,neutral,False
+612,3ff316d6b6,Law,"A frivolous lawsuit is one that lacks any legal basis or merit, often because it is not grounded in fact or law.",Entailment,entailment,True
+613,3ff316d6b6,Law,"Such lawsuits are typically filed with the intent to harass, delay, or burden the opposing party rather than to achieve a legitimate legal outcome.",Contradiction,neutral,False
+614,3ff316d6b6,Law,Courts may dismiss frivolous lawsuits and can impose sanctions on the party or attorney who filed them.,Contradiction,neutral,False
+615,e3a4fcfc31,Law,"In the United States, if your parents die with outstanding debt, their estate is responsible for settling those debts.",Contradiction,neutral,False
+616,e3a4fcfc31,Law,The executor of the estate will use the deceased's assets to pay off creditors.,Contradiction,neutral,False
+617,e3a4fcfc31,Law,"If the estate lacks sufficient assets, the debts typically remain unpaid, as children are not personally liable for their parents' debts unless they co-signed or are otherwise legally responsible.",Entailment,neutral,False
+618,e3a4fcfc31,Law,"However, certain assets like life insurance or retirement accounts with designated beneficiaries usually pass directly to the beneficiaries and are not used to pay off debts.",Neutral,neutral,True
+619,4454958246,Health,Liking to organize things is not inherently indicative of a mental disorder.,Entailment,entailment,True
+620,4454958246,Health,Many people enjoy organizing as a personal preference or as a way to manage their environment effectively.,Contradiction,neutral,False
+621,4454958246,Health,"However, if the need to organize becomes obsessive or interferes significantly with daily life, it could be a symptom of a mental health condition, such as Obsessive-Compulsive Disorder (OCD).",Contradiction,neutral,False
+622,4454958246,Health,It is important to differentiate between a preference for organization and behaviors that are compulsive or distressing.,Contradiction,neutral,False
+623,474ad4c2a6,Misconceptions,Dogs see colors differently than humans; they primarily perceive the world in shades of blue and yellow.,Neutral,neutral,True
+624,474ad4c2a6,Misconceptions,"They have dichromatic vision, meaning they have two types of color receptors (cones) in their eyes, compared to the three types humans have.",Neutral,neutral,True
+625,474ad4c2a6,Misconceptions,"This limits their ability to distinguish between red and green, making these colors appear more like shades of gray or brown to them.",Neutral,neutral,True
+626,4f25f74f27,Misconceptions,"Cracking your knuckles frequently is generally considered harmless and is not linked to arthritis, contrary to popular belief.",Entailment,neutral,False
+627,4f25f74f27,Misconceptions,The sound is caused by the rapid release of gas bubbles in the synovial fluid of the joint.,Neutral,neutral,True
+628,4f25f74f27,Misconceptions,"However, excessive knuckle cracking may lead to reduced grip strength or swelling over time, though these effects are not well-documented.",Neutral,neutral,True
+629,97f738a226,Health,There is no scientific evidence to support the claim that LSD remains in the spinal fluid for extended periods.,Neutral,neutral,True
+630,97f738a226,Health,"LSD is metabolized and eliminated from the body relatively quickly, with a half-life of about 3 to 5 hours.",Entailment,entailment,True
+631,97f738a226,Health,"It is typically undetectable in the body after 24 to 48 hours, and the notion that it stays in the spinal fluid is a myth.",Entailment,neutral,False
+632,e08e2bda18,Misconceptions,"The red liquid that comes from a cooked steak is not blood, but rather a mixture of water and a protein called myoglobin.",Entailment,neutral,False
+633,e08e2bda18,Misconceptions,Myoglobin is responsible for transporting oxygen in muscle tissues and gives the liquid its reddish color.,Neutral,neutral,True
+634,e08e2bda18,Misconceptions,"As the steak cooks, the myoglobin is released along with water, creating the red juices often seen when slicing into the meat.",Neutral,neutral,True
+635,44c23d42d5,Misconceptions,"If you are brought to the hospital by ambulance, you are typically prioritized for evaluation and treatment based on the severity of your condition.",Contradiction,entailment,False
+636,44c23d42d5,Misconceptions,"Emergency departments use a triage system to assess patients, so those with life-threatening conditions are seen immediately, while others may wait longer depending on the urgency of their medical needs and the hospital's current capacity.",Contradiction,neutral,False
+637,55ce09b63d,Misconceptions,"Cinco de Mayo represents the commemoration of the Battle of Puebla, which took place on May 5, 1862, when the Mexican army achieved a significant victory over the French forces.",Entailment,entailment,True
+638,55ce09b63d,Misconceptions,"It is not Mexico's Independence Day, which is celebrated on September 16, and is observed more as a regional celebration in the state of Puebla rather than a nationwide holiday.",Neutral,neutral,True
+639,8b3dd8bec7,Health,"No, you should not wash chicken before cooking it.",Entailment,neutral,False
+640,8b3dd8bec7,Health,"Washing raw chicken can spread harmful bacteria like Salmonella and Campylobacter to your sink, countertops, and other kitchen surfaces through water splashes.",Contradiction,neutral,False
+641,8b3dd8bec7,Health,Proper cooking to the appropriate temperature is sufficient to kill any bacteria present on the chicken.,Contradiction,neutral,False
+642,9f9db267c6,Misconceptions,"Albert Einstein generally performed well in high school, particularly in mathematics and physics, where he excelled.",Contradiction,entailment,False
+643,9f9db267c6,Misconceptions,"However, he had a reputation for being rebellious and questioning authority, which sometimes led to conflicts with teachers.",Contradiction,neutral,False
+644,9f9db267c6,Misconceptions,"Contrary to popular myth, he did not fail mathematics; he was actually quite advanced for his age in these subjects.",Neutral,neutral,True
+645,8aac2a4e29,Proverbs,"There is no single ""best"" medicine, as the effectiveness of a medication depends on the specific condition being treated, the individual patient's needs, and their overall health profile.",Entailment,neutral,False
+646,8aac2a4e29,Proverbs,"The best medicine for a particular condition is one that is evidence-based, effectively manages symptoms, and is well-tolerated by the patient.",Contradiction,neutral,False
+647,8aac2a4e29,Proverbs,It's important for individuals to consult healthcare professionals to determine the most appropriate treatment for their specific situation.,Contradiction,neutral,False
+648,6ddce45fbc,Proverbs,Watching a pot of water on the stove does not affect the physical process of it boiling.,Entailment,entailment,True
+649,6ddce45fbc,Proverbs,"The phrase ""a watched pot never boils"" is a proverbial expression suggesting that time seems to pass more slowly when you are anxiously waiting for something to happen.",Neutral,contradiction,False
+650,6ddce45fbc,Proverbs,"In reality, the water will boil once it reaches its boiling point, regardless of whether it is being watched.",Entailment,neutral,False
+651,53c5a04b24,Law,"If a police officer in the U.S. is found to have lied, it can lead to various consequences depending on the severity and context of the lie.",Contradiction,neutral,False
+652,53c5a04b24,Law,"Disciplinary actions may include internal investigations, suspension, or termination of employment.",Contradiction,neutral,False
+653,53c5a04b24,Law,"Additionally, if the lie affects a legal case, it can result in the dismissal of charges, overturned convictions, or civil lawsuits against the officer or their department.",Contradiction,neutral,False
+654,53c5a04b24,Law,"In some cases, the officer may also face criminal charges for perjury or obstruction of justice.",Contradiction,neutral,False
+655,05da85c862,Stereotypes,"When a woman has short hair, it simply means she has chosen a hairstyle that is shorter in length.",Contradiction,entailment,False
+656,05da85c862,Stereotypes,"The reasons for this choice can vary widely, including personal preference, convenience, fashion trends, cultural influences, or a desire for a change.",Contradiction,neutral,False
+657,05da85c862,Stereotypes,Hair length does not inherently convey specific meanings about a person's identity or beliefs.,Neutral,entailment,False
+658,bf7f02ec5c,Conspiracies,"Korean Air Lines Flight 007 was shot down by a Soviet Su-15 interceptor on September 1, 1983, after it strayed into Soviet airspace near Sakhalin Island.",Entailment,neutral,False
+659,bf7f02ec5c,Conspiracies,The Boeing 747 was en route from New York City to Seoul via Anchorage when it deviated from its planned course.,Neutral,neutral,True
+660,bf7f02ec5c,Conspiracies,The incident resulted in the deaths of all 269 passengers and crew on board and significantly heightened Cold War tensions between the United States and the Soviet Union.,Neutral,neutral,True
+661,bd2db62f51,Paranormal,"Equipment commonly used in ghost hunting includes electromagnetic field (EMF) meters, digital voice recorders, infrared thermometers, and night vision cameras.",Contradiction,neutral,False
+662,bd2db62f51,Paranormal,"These tools are believed by some to detect changes in the environment that could indicate paranormal activity, such as fluctuations in electromagnetic fields, unexplained sounds, temperature variations, and visual anomalies.",Neutral,neutral,True
+663,bd2db62f51,Paranormal,"However, it's important to note that the existence of ghosts and the effectiveness of these tools in detecting them are not scientifically proven.",Entailment,entailment,True
+664,28c34e44db,Superstitions,Crying during the New Year does not have any inherent consequences beyond the emotional release it provides.,Entailment,entailment,True
+665,28c34e44db,Superstitions,"However, some cultures and superstitions suggest that starting the year with tears might lead to a year filled with sadness or bad luck.",Contradiction,neutral,False
+666,28c34e44db,Superstitions,These beliefs are not based on scientific evidence and vary widely across different cultures.,Neutral,neutral,True
+667,f04c78b152,Logical Falsehood,"Yes, all mammals are vertebrates.",Entailment,entailment,True
+668,f04c78b152,Logical Falsehood,"Vertebrates are animals that have a backbone or spinal column, and mammals, being a class within the phylum Chordata, possess this characteristic.",Entailment,neutral,False
+669,f04c78b152,Logical Falsehood,"This includes all species of mammals, from humans to whales to bats.",Neutral,neutral,True
+670,ab87ea62d1,Indexical Error: Time,"The most recent pandemic is the COVID-19 pandemic, which began in late 2019.",Entailment,neutral,False
+671,ab87ea62d1,Indexical Error: Time,"It was caused by the novel coronavirus SARS-CoV-2, with the first cases identified in Wuhan, China, in December 2019.",Neutral,neutral,True
+672,ab87ea62d1,Indexical Error: Time,"The World Health Organization declared it a pandemic on March 11, 2020.",Neutral,neutral,True

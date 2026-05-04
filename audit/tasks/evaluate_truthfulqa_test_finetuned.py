@@ -87,6 +87,7 @@ def run(use_base: bool = False) -> dict:
         model_id: str = config.AUDITOR_MODEL
         eval_json = config.TQA_TEST_BASE_EVAL_JSON
         confusion_png = config.TQA_TEST_BASE_CONFUSION_PNG
+        predictions_csv = config.TQA_TEST_BASE_PREDICTIONS_CSV
         model_label = f"base:{config.AUDITOR_MODEL}"
         title_prefix = "Zero-Shot DeBERTa"
         print("\n[Task K] Evaluating base (zero-shot) model on TruthfulQA test set...")
@@ -98,6 +99,7 @@ def run(use_base: bool = False) -> dict:
         model_id = str(config.FINETUNED_MODEL_DIR)
         eval_json = config.TQA_TEST_FINETUNED_EVAL_JSON
         confusion_png = config.TQA_TEST_FINETUNED_CONFUSION_PNG
+        predictions_csv = config.TQA_TEST_FINETUNED_PREDICTIONS_CSV
         model_label = f"finetuned:{config.AUDITOR_MODEL}"
         title_prefix = "SciFact-Finetuned DeBERTa"
         print("\n[Task K] Evaluating finetuned model on TruthfulQA test set...")
@@ -129,6 +131,12 @@ def run(use_base: bool = False) -> dict:
 
     contra_recall = metrics["per_class"].get("contradiction", {}).get("recall", 0.0)
     metrics["contradiction_recall"] = float(contra_recall)
+
+    pred_df = test_df[["claim_id", "question_id", "category", "atomic_claim", "Gold_Label"]].copy()
+    pred_df["predicted_label"] = preds
+    pred_df["correct"] = pred_df["Gold_Label"].str.lower() == pred_df["predicted_label"]
+    pred_df.to_csv(predictions_csv, index=False)
+    print(f"  Saved → {predictions_csv.name}")
 
     n = len(hypotheses)
     utils.save_json(
