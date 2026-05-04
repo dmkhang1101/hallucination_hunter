@@ -31,8 +31,10 @@ TASKS: list[tuple[str, str, str, Path | None]] = [
     ("E", "Baselines",              "tasks.run_baselines",        config.BASELINES_JSON),
     ("F", "Subtype Analysis (RQ3)", "tasks.analyze_subtypes",     None),
     ("G", "Error Analysis",         "tasks.extract_errors",       None),
-    ("H", "Predict All Claims",     "tasks.predict_all_claims",   config.ALL_CLAIMS_PREDICTIONS_CSV),
-    ("I", "SciFact Fine-tune",      "tasks.finetune_scifact",     config.SCIFACT_FINETUNED_EVAL_JSON),
+    ("H", "Predict All Claims",     "tasks.predict_all_claims",        config.ALL_CLAIMS_PREDICTIONS_CSV),
+    ("I", "SciFact Fine-tune",      "tasks.finetune_scifact",          config.SCIFACT_FINETUNED_EVAL_JSON),
+    ("J", "TruthfulQA All Claims",  "tasks.evaluate_truthfulqa_all_claims",    None),
+    ("K", "TruthfulQA Test (FT)",   "tasks.evaluate_truthfulqa_test_finetuned", config.TQA_TEST_FINETUNED_EVAL_JSON),
 ]
 
 

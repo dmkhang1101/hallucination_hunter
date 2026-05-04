@@ -12,8 +12,11 @@ SBERT_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 # Inputs
 PILOT_CSV = REPO / "50_sample_annotation.csv"
+ALL_CLAIMS_CSV = REPO / "all_claims_annotation_complete.csv"
+TQA_TEST_ANNOTATED_CSV = REPO / "truthfulqa_test_annotated.csv"
 GEN_DATA = REPO / "generate_data" / "data"
 PRIMARY_ANSWERS = GEN_DATA / "primary_answers.csv"
+PRIMARY_ANSWERS_PILOT = GEN_DATA / "pilot" / "primary_answers.csv"
 ATOMIC_CLAIMS = GEN_DATA / "atomic_claims.csv"
 SAMPLED_Q = GEN_DATA / "sampled_questions.csv"
 TQA_TRAIN = GEN_DATA / "split" / "truthfulqa_train.csv"
@@ -46,6 +49,11 @@ SCIFACT_COMPARISON_JSON = EVAL_DIR / "scifact_comparison.json"
 TQA_GROUNDED_JSON = EVAL_DIR / "truthfulqa_grounded.json"
 TQA_UNGROUNDED_JSON = EVAL_DIR / "truthfulqa_ungrounded.json"
 TQA_COMPARISON_JSON = EVAL_DIR / "grounded_vs_ungrounded.json"
+TQA_GROUNDED_ALL_CLAIMS_JSON = EVAL_DIR / "truthfulqa_grounded_all_claims.json"
+TQA_UNGROUNDED_ALL_CLAIMS_JSON = EVAL_DIR / "truthfulqa_ungrounded_all_claims.json"
+TQA_COMPARISON_ALL_CLAIMS_JSON = EVAL_DIR / "grounded_vs_ungrounded_all_claims.json"
+TQA_TEST_FINETUNED_EVAL_JSON = EVAL_DIR / "truthfulqa_test_finetuned.json"
+TQA_TEST_BASE_EVAL_JSON = EVAL_DIR / "truthfulqa_test_base.json"
 SUBTYPE_ANALYSIS_JSON = EVAL_DIR / "subtype_analysis.json"
 
 # baselines/
@@ -64,6 +72,10 @@ SCIFACT_FINETUNED_CONFUSION_PNG = FIGURES_DIR / "scifact_finetuned_confusion.png
 SUBTYPE_RECALL_PNG = FIGURES_DIR / "subtype_recall.png"
 PILOT_CONFUSION_PNG = FIGURES_DIR / "pilot_confusion.png"
 PILOT_F1_ACCURACY_PNG = FIGURES_DIR / "pilot_f1_accuracy.png"
+PILOT_CONFUSION_ALL_CLAIMS_PNG = FIGURES_DIR / "pilot_confusion_all_claims.png"
+PILOT_F1_ACCURACY_ALL_CLAIMS_PNG = FIGURES_DIR / "pilot_f1_accuracy_all_claims.png"
+TQA_TEST_FINETUNED_CONFUSION_PNG = FIGURES_DIR / "truthfulqa_test_finetuned_confusion.png"
+TQA_TEST_BASE_CONFUSION_PNG = FIGURES_DIR / "truthfulqa_test_base_confusion.png"
 
 # predictions/
 ALL_CLAIMS_PREDICTIONS_CSV = PREDICTIONS_DIR / "all_claims_predictions.csv"
