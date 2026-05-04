@@ -1,0 +1,7 @@
+{
+  "total_claims": 1075,
+  "accuracy": 0.2772093023255814,
+  "entailment_recall": 0.25287356321839083,
+  "contradiction_recall": 0.71875,
+  "neutral_recall": 0.06490384615384616
+}
