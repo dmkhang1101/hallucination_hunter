@@ -1,5 +1,5 @@
 """
-Step 3 — Split each GPT-4o answer into atomic facts using spaCy sentences.
+Split each GPT-4o answer into atomic facts using spaCy sentences.
 
 Input:  data/primary_answers.csv
 Output: data/atomic_claims.csv
@@ -15,7 +15,7 @@ from tqdm import tqdm
 import config
 
 
-# ── Helpers ──────────────────────────────────────────────────────────────────
+#  Helpers 
 
 def _load_model() -> spacy.Language:
     print(f"[extract] Loading spaCy model '{config.SPACY_MODEL}'…")
@@ -38,7 +38,7 @@ def _extract_claims(nlp: spacy.Language, text: str) -> list[str]:
     return claims
 
 
-# ── Public entry point ───────────────────────────────────────────────────────
+# Public entry point
 
 def run(answers_df: pd.DataFrame | None = None) -> pd.DataFrame:
     """
