@@ -8,6 +8,9 @@ Each row in the output is one sentence/claim, linked back to its
 question_id, question, and category.
 """
 
+import ast
+import json
+
 import pandas as pd
 import spacy
 from tqdm import tqdm
@@ -73,7 +76,7 @@ def run(answers_df: pd.DataFrame | None = None, dry_run: bool = False) -> pd.Dat
                 "question_id":    row["question_id"],
                 "question":       row["question"],
                 "category":       row["category"],
-                "correct_answer": row["best_answer"],
+                "correct_answers": row["correct_answers"],
                 "primary_answer": row["primary_answer"],
                 "claim_index":    idx,          # 0-based position within the answer
                 "claim":          claim,
@@ -91,14 +94,19 @@ def run(answers_df: pd.DataFrame | None = None, dry_run: bool = False) -> pd.Dat
     print(f"[extract] Saved claims → {claims_csv}")
 
     # JSON version: group claims by question for easier downstream consumption
-    import json
     grouped: list[dict] = []
     for qid, g in df_claims.groupby("question_id", sort=False):
+        # correct_answers may be: list/ndarray (from generate) or string (loaded from CSV)
+        raw = g["correct_answers"].iloc[0]
+        if isinstance(raw, str):
+            correct = ast.literal_eval(raw)
+        else:
+            correct = list(raw)  # handles numpy ndarray and plain lists
         grouped.append({
             "question_id":    qid,
             "question":       g["question"].iloc[0],
             "category":       g["category"].iloc[0],
-            "correct_answer": g["correct_answer"].iloc[0],
+            "correct_answers": correct,
             "primary_answer": g["primary_answer"].iloc[0],
             "claims":         g["claim"].tolist(),
         })
