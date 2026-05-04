@@ -16,6 +16,7 @@ DATA_DIR.mkdir(exist_ok=True)
 QUESTIONS_CSV   = DATA_DIR / "sampled_questions.csv"
 ANSWERS_CSV     = DATA_DIR / "primary_answers.csv"
 CLAIMS_CSV      = DATA_DIR / "atomic_claims.csv"
+CLAIMS_JSON     = DATA_DIR / "atomic_claims.json"
 
 # ── OpenAI ───────────────────────────────────────────────────────────────────
 OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
