@@ -1,0 +1,55 @@
+{
+  "model_name": "base:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "timestamp": "2026-05-04T14:48:44.232723+00:00",
+  "seed": 42,
+  "n_examples": 673,
+  "model": "base:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "n_claims": 673,
+  "per_class": {
+    "entailment": {
+      "precision": 0.6311475409836066,
+      "recall": 0.34375,
+      "f1": 0.4450867052023122,
+      "support": 224
+    },
+    "neutral": {
+      "precision": 0.4277456647398844,
+      "recall": 0.8705882352941177,
+      "f1": 0.5736434108527132,
+      "support": 255
+    },
+    "contradiction": {
+      "precision": 0.21875,
+      "recall": 0.03608247422680412,
+      "f1": 0.061946902654867256,
+      "support": 194
+    }
+  },
+  "macro_f1": 0.36022567290329754,
+  "accuracy": 0.45468053491827637,
+  "confusion_matrix": {
+    "labels": [
+      "entailment",
+      "neutral",
+      "contradiction"
+    ],
+    "matrix": [
+      [
+        77,
+        136,
+        11
+      ],
+      [
+        19,
+        222,
+        14
+      ],
+      [
+        26,
+        161,
+        7
+      ]
+    ]
+  },
+  "contradiction_recall": 0.03608247422680412
+}
