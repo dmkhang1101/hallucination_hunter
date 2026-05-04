@@ -54,6 +54,8 @@ TQA_UNGROUNDED_ALL_CLAIMS_JSON = EVAL_DIR / "truthfulqa_ungrounded_all_claims.js
 TQA_COMPARISON_ALL_CLAIMS_JSON = EVAL_DIR / "grounded_vs_ungrounded_all_claims.json"
 TQA_TEST_FINETUNED_EVAL_JSON = EVAL_DIR / "truthfulqa_test_finetuned.json"
 TQA_TEST_BASE_EVAL_JSON = EVAL_DIR / "truthfulqa_test_base.json"
+TQA_TEST_FINETUNED_PREDICTIONS_CSV = PREDICTIONS_DIR / "truthfulqa_test_finetuned_predictions.csv"
+TQA_TEST_BASE_PREDICTIONS_CSV = PREDICTIONS_DIR / "truthfulqa_test_base_predictions.csv"
 SUBTYPE_ANALYSIS_JSON = EVAL_DIR / "subtype_analysis.json"
 
 # baselines/
