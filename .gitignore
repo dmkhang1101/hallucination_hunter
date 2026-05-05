@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+venv/
+=======
 __pycache__/
 *.pyc
 *.pyo
@@ -12,3 +15,4 @@ venv/
 results/finetuned_model/
 # Debug snapshot of the old broken-tokenization eval (kept locally only)
 results/eval/scifact_eval.broken_sep_format.json
+>>>>>>> main
