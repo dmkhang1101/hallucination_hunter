@@ -1,0 +1,16 @@
+{
+  "comparison_lexical_vs_finetuned_auditor": {
+    "baseline_accuracy": 0.2772093023255814,
+    "auditor_accuracy": 0.4390697674418605,
+    "improvement": 0.1618604651162791,
+    "mcnemar_p_value": 4.34308145003115e-12,
+    "statistically_significant": "True",
+    "total_claims": 1075,
+    "contingency_table": {
+      "both_correct": 73,
+      "baseline_only_correct": 225,
+      "auditor_only_correct": 399,
+      "both_wrong": 378
+    }
+  }
+}

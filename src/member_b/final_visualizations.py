@@ -1,11 +1,15 @@
+#task 3: final visualization
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import json
 import os
+import shutil
 from sklearn.metrics import confusion_matrix, classification_report
 
 os.makedirs('results/figures/final', exist_ok=True)
+
+print("TASK 3 - FINAL VISUALIZATIONS")
 
 df = pd.read_csv('results/baselines/scaled_baseline_results.csv')
 print(f"Loaded {len(df)} claims with gold labels")
@@ -30,9 +34,8 @@ df['prediction_simple'] = df['prediction'].apply(extract_label)
 print("\nLabel distribution after fix:")
 print(df['gold_label_simple'].value_counts())
 
-#Confusion matrix for TruthfulQA
-print("1. Creating TruthfulQA Confusion Matrix...")
-
+# Confusion matrix for TruthfulQA
+print("\n1. Creating TruthfulQA Confusion Matrix...")
 
 label_map = {'Entailment': 0, 'Contradiction': 1, 'Neutral': 2}
 y_true = [label_map[l] for l in df['gold_label_simple']]
@@ -52,13 +55,12 @@ plt.savefig('results/figures/final/truthfulqa_confusion_matrix.png', dpi=150)
 plt.close()
 print("Saved: results/figures/final/truthfulqa_confusion_matrix.png")
 
-# Also save as CSV for reference
 cm_df = pd.DataFrame(cm, index=['Actual_E', 'Actual_C', 'Actual_N'], 
                      columns=['Pred_E', 'Pred_C', 'Pred_N'])
 cm_df.to_csv('results/figures/final/truthfulqa_confusion_matrix.csv')
 print("Saved: results/figures/final/truthfulqa_confusion_matrix.csv")
 
-#RECALL BY CATEGORY (38 categories)
+# RECALL BY CATEGORY (38 categories)
 print("\n2. Creating Recall by Category Chart...")
 
 category_recall = df.groupby('category').apply(
@@ -88,7 +90,7 @@ print("\nBottom 5 categories (lowest accuracy):")
 for cat, acc in category_recall.tail(5).items():
     print(f"  {cat}: {acc:.3f}")
 
-#PILOT vs SCALED PERFORMANCE COMPARISON
+# PILOT vs SCALED PERFORMANCE COMPARISON
 print("\n3. Creating Pilot vs Scaled Comparison...")
 
 pilot_df = df.head(402) 
@@ -119,7 +121,7 @@ plt.savefig('results/figures/final/pilot_vs_scaled_comparison.png', dpi=150)
 plt.close()
 print("Saved: results/figures/final/pilot_vs_scaled_comparison.png")
 
-#SUMMARY STATISTICS TABLE
+# SUMMARY STATISTICS TABLE
 print("\n4. Generating Summary Table...")
 
 from sklearn.metrics import recall_score
@@ -144,3 +146,52 @@ print(f"  Accuracy: {summary['accuracy']:.4f}")
 print(f"  Entailment Recall: {summary['entailment_recall']:.4f}")
 print(f"  Contradiction Recall: {summary['contradiction_recall']:.4f}")
 print(f"  Neutral Recall: {summary['neutral_recall']:.4f}")
+
+# 5. Grounded vs Ungrounded F1 Bar Chart
+print("\n5. Creating Grounded vs Ungrounded F1 Bar Chart...")
+
+try:
+    with open('results/eval/grounded_vs_ungrounded_all_claims.json', 'r') as f:
+        g_data = json.load(f)
+    
+    grounded_f1 = g_data.get('grounded', {}).get('f1_weighted', 0)
+    ungrounded_f1 = g_data.get('ungrounded', {}).get('f1_weighted', 0)
+    
+    print(f"   Grounded F1: {grounded_f1:.4f}")
+    print(f"   Ungrounded F1: {ungrounded_f1:.4f}")
+    
+    plt.figure(figsize=(6, 6))
+    bars = plt.bar(['Grounded', 'Ungrounded'], [grounded_f1, ungrounded_f1],
+                   color=['#66b3ff', '#ff9999'])
+    plt.ylim(0, 1)
+    plt.ylabel('F1 Score (Weighted)')
+    plt.title('DeBERTa Auditor: Grounded vs Ungrounded\n(402 claims)')
+    for bar, f1 in zip(bars, [grounded_f1, ungrounded_f1]):
+        plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.02,
+                 f'{f1:.3f}', ha='center', fontweight='bold')
+    plt.tight_layout()
+    plt.savefig('results/figures/final/grounded_vs_ungrounded_f1.png', dpi=150)
+    plt.close()
+    print("Saved: grounded_vs_ungrounded_f1.png")
+except FileNotFoundError:
+    print("File not found: results/eval/grounded_vs_ungrounded_all_claims.json")
+
+# 6. Copy SciFact confusion matrix
+print("\n6. Copying SciFact confusion matrix...")
+if os.path.exists('results/figures/scifact_finetuned_confusion.png'):
+    shutil.copy('results/figures/scifact_finetuned_confusion.png',
+                'results/figures/final/scifact_confusion_matrix.png')
+    print("Copied: scifact_confusion_matrix.png")
+else:
+    print("File not found: results/figures/scifact_finetuned_confusion.png")
+
+# 7. Copy TruthfulQA fine-tuned confusion matrix
+print("\n7. Copying TruthfulQA fine-tuned confusion matrix...")
+if os.path.exists('results/figures/truthfulqa_test_finetuned_confusion.png'):
+    shutil.copy('results/figures/truthfulqa_test_finetuned_confusion.png',
+                'results/figures/final/truthfulqa_finetuned_confusion.png')
+    print("Copied: truthfulqa_finetuned_confusion.png")
+else:
+    print("File not found: results/figures/truthfulqa_test_finetuned_confusion.png")
+
+print("\nAll visualizations saved to: results/figures/final/")
