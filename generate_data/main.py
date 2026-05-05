@@ -52,11 +52,7 @@ def main() -> None:
     print(f"  Skip gen  : {args.skip_generate}")
     print("=" * 60)
 
-<<<<<<< HEAD
-    # Step 1 & 2: generate answers 
-=======
     # Step 1 & 2: generate answers
->>>>>>> main
     if args.skip_generate:
         print("\n[main] Skipping generation step — using existing answers CSV")
         answers_df = None   # extract.run() will load from disk

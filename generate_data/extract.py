@@ -6,8 +6,6 @@ Output: data/atomic_claims.csv
 
 Each row in the output is one sentence/claim, linked back to its
 question_id, question, and category.
-<<<<<<< HEAD
-=======
 
 This module hardens the default spaCy sentencizer against common
 "mid-thought" splits observed in the 50-sample pilot annotation:
@@ -22,51 +20,21 @@ The strategy combines:
     2. A post-pass that merges short fragments lacking a verb back into
        the previous sentence so each emitted claim is contextually
        complete.
->>>>>>> main
 """
 
 import ast
 import json
-<<<<<<< HEAD
-
-import pandas as pd
-import spacy
-=======
 import re
 
 import pandas as pd
 import spacy
 from spacy.language import Language
 from spacy.tokens import Doc
->>>>>>> main
 from tqdm import tqdm
 
 import config
 
 
-<<<<<<< HEAD
-#  Helpers 
-
-def _load_model() -> spacy.Language:
-    print(f"[extract] Loading spaCy model '{config.SPACY_MODEL}'…")
-    try:
-        return spacy.load(config.SPACY_MODEL)
-    except OSError:
-        raise OSError(
-            f"spaCy model '{config.SPACY_MODEL}' not found. "
-            f"Run:  python -m spacy download {config.SPACY_MODEL}"
-        )
-
-
-def _extract_claims(nlp: spacy.Language, text: str) -> list[str]:
-    """
-    Split text into sentences using spaCy, strip whitespace,
-    and filter out empty/very short fragments.
-    """
-    doc = nlp(text)
-    claims = [sent.text.strip() for sent in doc.sents if len(sent.text.strip()) > 10]
-    return claims
-=======
 # Constants
 
 # Abbreviations whose trailing period must NOT end a sentence.
@@ -209,7 +177,6 @@ def _extract_claims(nlp: Language, text: str) -> list[str]:
 
     # Final length filter — keep behaviour parity with prior version.
     return [c for c in merged if len(c) > _MIN_CLAIM_LEN]
->>>>>>> main
 
 
 # Public entry point
