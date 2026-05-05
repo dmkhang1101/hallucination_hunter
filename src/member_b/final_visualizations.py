@@ -154,8 +154,8 @@ try:
     with open('results/eval/grounded_vs_ungrounded_all_claims.json', 'r') as f:
         g_data = json.load(f)
     
-    grounded_f1 = g_data.get('grounded', {}).get('f1_weighted', 0)
-    ungrounded_f1 = g_data.get('ungrounded', {}).get('f1_weighted', 0)
+    grounded_f1 = g_data.get('grounded_macro_f1', 0)
+    ungrounded_f1 = g_data.get('ungrounded_macro_f1', 0)
     
     print(f"   Grounded F1: {grounded_f1:.4f}")
     print(f"   Ungrounded F1: {ungrounded_f1:.4f}")
@@ -163,11 +163,11 @@ try:
     plt.figure(figsize=(6, 6))
     bars = plt.bar(['Grounded', 'Ungrounded'], [grounded_f1, ungrounded_f1],
                    color=['#66b3ff', '#ff9999'])
-    plt.ylim(0, 1)
-    plt.ylabel('F1 Score (Weighted)')
+    plt.ylim(0, 0.5)
+    plt.ylabel('F1 Score (Macro)')
     plt.title('DeBERTa Auditor: Grounded vs Ungrounded\n(402 claims)')
     for bar, f1 in zip(bars, [grounded_f1, ungrounded_f1]):
-        plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.02,
+        plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01,
                  f'{f1:.3f}', ha='center', fontweight='bold')
     plt.tight_layout()
     plt.savefig('results/figures/final/grounded_vs_ungrounded_f1.png', dpi=150)
@@ -175,6 +175,8 @@ try:
     print("Saved: grounded_vs_ungrounded_f1.png")
 except FileNotFoundError:
     print("File not found: results/eval/grounded_vs_ungrounded_all_claims.json")
+except Exception as e:
+    print(f"Error: {e}")
 
 # 6. Copy SciFact confusion matrix
 print("\n6. Copying SciFact confusion matrix...")
