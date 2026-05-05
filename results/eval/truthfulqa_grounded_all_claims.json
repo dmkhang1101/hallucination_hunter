@@ -1,0 +1,54 @@
+{
+  "model_name": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "timestamp": "2026-05-04T14:42:40.511661+00:00",
+  "seed": 42,
+  "n_examples": 402,
+  "mode": "grounded",
+  "n_claims": 402,
+  "per_class": {
+    "entailment": {
+      "precision": 0.9428571428571428,
+      "recall": 0.15639810426540285,
+      "f1": 0.2682926829268293,
+      "support": 211
+    },
+    "neutral": {
+      "precision": 0.4511494252873563,
+      "recall": 0.9751552795031055,
+      "f1": 0.6168958742632613,
+      "support": 161
+    },
+    "contradiction": {
+      "precision": 0.3157894736842105,
+      "recall": 0.2,
+      "f1": 0.24489795918367346,
+      "support": 30
+    }
+  },
+  "macro_f1": 0.37669550545792135,
+  "accuracy": 0.48756218905472637,
+  "confusion_matrix": {
+    "labels": [
+      "entailment",
+      "neutral",
+      "contradiction"
+    ],
+    "matrix": [
+      [
+        33,
+        168,
+        10
+      ],
+      [
+        1,
+        157,
+        3
+      ],
+      [
+        1,
+        23,
+        6
+      ]
+    ]
+  }
+}
