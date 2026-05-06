@@ -10,12 +10,11 @@ from sklearn.metrics import confusion_matrix, classification_report
 os.makedirs('results/figures/final', exist_ok=True)
 
 print("TASK 3 - FINAL VISUALIZATIONS")
-
 df = pd.read_csv('results/baselines/scaled_baseline_results.csv')
 print(f"Loaded {len(df)} claims with gold labels")
 
 def extract_label(label):
-    """Extract 'Entailment', 'Contradiction', or 'Neutral' from labels like 'Contradiction (Factual Error)'"""
+    #Extract 'Entailment', 'Contradiction', or 'Neutral' from labels like 'Contradiction (Factual Error)'
     if pd.isna(label):
         return 'Neutral'
     label_str = str(label)
@@ -196,4 +195,61 @@ if os.path.exists('results/figures/truthfulqa_test_finetuned_confusion.png'):
 else:
     print("File not found: results/figures/truthfulqa_test_finetuned_confusion.png")
 
-print("\nAll visualizations saved to: results/figures/final/")
+# 8. Prediction Distribution by Category (ALL 38 categories, 1075 claims) (original figure 3 in src/member_b/analyze_baseline.py)
+baseline_df = pd.read_csv('results/baselines/scaled_baseline_results.csv')
+print(f"Loaded {len(baseline_df)} claims (1,075 scaled dataset)")
+
+def extract_label(label):
+    if pd.isna(label):
+        return 'Neutral'
+    label_str = str(label)
+    if 'Entailment' in label_str:
+        return 'Entailment'
+    elif 'Contradiction' in label_str:
+        return 'Contradiction'
+    elif 'Neutral' in label_str:
+        return 'Neutral'
+    return 'Neutral'
+
+baseline_df['prediction_simple'] = baseline_df['prediction'].apply(extract_label)
+baseline_df['gold_label_simple'] = baseline_df['gold_label'].apply(extract_label)
+
+print("\nCreating Prediction Distribution by Category (38 categories)...")
+pred_distribution = baseline_df.groupby('category')['prediction_simple'].value_counts(normalize=True).unstack().fillna(0)
+
+pred_distribution = pred_distribution.loc[pred_distribution.sum(axis=1).sort_values(ascending=False).index]
+
+pred_order = ['Contradiction', 'Entailment', 'Neutral']
+pred_distribution = pred_distribution[pred_order]
+
+fig, ax = plt.subplots(figsize=(14, 10))
+pred_distribution.plot(kind='barh', stacked=True, ax=ax,
+                        color=['#ff9999', '#66b3ff', '#99ff99'],
+                        edgecolor='white', linewidth=0.5)
+
+ax.set_xlabel('Proportion', fontsize=12)
+ax.set_ylabel('Category', fontsize=12)
+ax.set_title('Prediction Distribution by Category (1,075 claims, 38 categories)', fontsize=14)
+ax.legend(title='Prediction', bbox_to_anchor=(1.05, 1), loc='upper left')
+ax.set_xlim(0, 1)
+
+plt.tight_layout()
+plt.savefig('results/figures/final/predictions_by_category_38.png', dpi=150)
+plt.close()
+print("Saved: results/figures/final/predictions_by_category_38.png")
+
+# 8. Prediction pie chart (1075 claims) (original figure 2 in src/member_b/analyze_baseline.py)
+print("\nCreating Prediction Distribution Pie Chart...")
+
+pred_counts = baseline_df['prediction_simple'].value_counts()
+colors = ['#ff9999', '#66b3ff', '#99ff99']
+labels = ['Contradiction', 'Entailment', 'Neutral']
+
+plt.figure(figsize=(8, 8))
+plt.pie(pred_counts.values, labels=labels, autopct='%1.1f%%', 
+        colors=colors, startangle=90)
+plt.title(f'Lexical Baseline - Prediction Distribution\n(1,075 claims)', fontsize=14)
+plt.tight_layout()
+plt.savefig('results/figures/final/predictions_pie_updated.png', dpi=150)
+plt.close()
+print("Saved: results/figures/final/predictions_pie_updated.png")
